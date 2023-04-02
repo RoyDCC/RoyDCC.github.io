@@ -1,0 +1,22 @@
+h1{
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+p{
+    margin: 0;
+}
+.recursos{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 1.5rem 2rem;
+}
+.recs{
+    padding: 0;
+}
+.recursos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+}

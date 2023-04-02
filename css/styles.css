@@ -1,3 +1,29 @@
-body{
+@font-face {
+    font-family: 'roboto';
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+*{
     margin: 0;
+    font-family: 'roboto';
+}
+ul{
+    list-style: none;
+}
+.barra{
+    padding-left: calc(var(--bs-gutter-x) * 0.8);
+}
+.navbar{
+    background-color: #f1f1f1;
+}
+.navbar-nav{
+    width: 50%;
+    justify-content: space-evenly;
+    margin-right: auto;
+}
+.navbar-brand i{
+    font-size: 1.5em;
+}
+.nav-link:hover{
+    scale: 1.1;
+    transition: 0.5s;
 }
