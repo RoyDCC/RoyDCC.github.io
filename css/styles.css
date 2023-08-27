@@ -76,3 +76,14 @@ header{
     top: 10vh;
 }
 /* HERO FIN ------------------------- */
+
+
+@media (max-width: 991px) {
+    .navbar-nav{
+        margin: 0;
+        width: 100%;
+    }
+    .navbar-nav li{
+        text-align: center;
+    }
+}

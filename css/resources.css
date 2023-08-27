@@ -26,3 +26,25 @@
     display: inline-block;
     margin-bottom: 1rem;
 }
+@media (max-width: 991px) {
+    .column{
+        width: calc(100%/2);
+    }
+    .resources{
+        max-width: 850px;
+        margin: auto;
+    }
+}
+@media (max-width: 550px) {
+    .column{
+        width: 100%;
+    }
+    .recs li{
+        width: 30%;
+    }
+}
+@media (max-width: 350px) {
+    .recs li{
+        width: 45%;
+    }
+}
