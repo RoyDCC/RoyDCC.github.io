@@ -2,6 +2,10 @@
     font-family: 'roboto';
     src: url(../fonts/Roboto-Regular.ttf);
 }
+:root{
+    --bg: #e8e8e8;
+    --bgTxt: #5e5e5e;
+}
 *{
     margin: 0;
     font-family: 'roboto';
@@ -19,6 +23,16 @@ ul{
 button:hover{
     transform: scale(1.05);
     transition: 0.7s;
+}
+.wrapDef{
+    max-width: 1700px;
+    margin: 0 auto;
+}
+.gapDef{
+    padding: 3rem 0;
+}
+.subH1{
+    font-size: calc(1.375rem + 1.1vw);
 }
 /* NAVBAR INICIO ------------------------- */
 .barra{
@@ -68,8 +82,8 @@ header{
 #name button{
     width: 15rem;
     padding: 0.5rem 0;
-    border-radius: 12px;
-    background-color: #1d9bf4;
+    border-radius: 6px;
+    background-color: #4682A9;
     color: white;
     border: none;
     position: relative;
@@ -77,6 +91,76 @@ header{
 }
 /* HERO FIN ------------------------- */
 
+/* HERRAMIENTAS INICIO ------------------------- */
+#Herramientas{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#Herramientas h1{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+.tooling{
+    background-color: var(--bg);
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    border-radius: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem 0;
+}
+.tool{
+    width: calc(100%/5);
+    text-align: center;
+}
+.tool p{
+    color: var(--bgTxt);
+    margin: 0;
+}
+.toolGap{
+    margin-bottom: 2rem;
+}
+.tool i{
+    font-size: 2rem;
+    position: relative;
+    top: 0.2rem;
+}
+.HTML{
+    color: #fc4f13;
+}
+.CSS{
+    color: #2d53e5;
+}
+.JS{
+    color: #e6d44e;
+}
+.Java{
+    color: #50809f;
+}
+.Git{
+    color: #f15639;
+}
+.Python{
+    color: #e2c565;
+}
+.Kotlin{
+    color: #2e2f33;
+}
+.Bootstrap{
+    color: #7c18f8;
+}
+.PHP{
+    color: #556096;
+}
+.CS{
+    color: #9e559a;
+}
+/* HERRAMIENTAS FIN ------------------------- */
 
 @media (max-width: 991px) {
     .navbar-nav{
