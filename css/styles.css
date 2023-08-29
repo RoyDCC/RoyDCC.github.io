@@ -113,6 +113,7 @@ header{
     max-width: 1200px;
     margin: 0 auto;
     padding: 1.5rem 0;
+    gap: 2rem 0;
 }
 .tool{
     width: calc(100%/5);
@@ -121,9 +122,6 @@ header{
 .tool p{
     color: var(--bgTxt);
     margin: 0;
-}
-.toolGap{
-    margin-bottom: 2rem;
 }
 .tool i{
     font-size: 2rem;
@@ -149,7 +147,7 @@ header{
     color: #e2c565;
 }
 .Kotlin{
-    color: #2e2f33;
+    color: #30d780;
 }
 .Bootstrap{
     color: #7c18f8;
@@ -169,5 +167,24 @@ header{
     }
     .navbar-nav li{
         text-align: center;
+    }
+    .tooling{
+        justify-content: center;
+        width: 85%;
+    }
+    .tool{
+        width: calc(100%/3);
+        text-align: center;
+    }
+    #Herramientas{
+        height: auto;
+    }
+}
+@media (max-width: 550px) {
+    .tooling{
+        width: 90%;
+    }
+    .tool{
+        width: calc(100%/2);
     }
 }
