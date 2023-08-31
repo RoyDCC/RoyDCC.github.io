@@ -1,4 +1,8 @@
 @font-face {
+    font-family: 'Paytone';
+    src: url(../fonts/PaytoneOne-Regular.ttf);
+}
+@font-face {
     font-family: 'roboto';
     src: url(../fonts/Roboto-Regular.ttf);
 }
@@ -76,8 +80,8 @@ header{
     align-items: center;
 }
 #name h1{
-    font-family: sans-serif;
-    font-weight: bold;
+    font-family: 'Paytone';
+    font-weight: lighter;
 }
 #name button{
     width: 15rem;
@@ -86,6 +90,8 @@ header{
     background-color: #4682A9;
     color: white;
     border: none;
+}
+#name a{
     position: relative;
     top: 10vh;
 }
