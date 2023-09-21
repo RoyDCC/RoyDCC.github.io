@@ -46,10 +46,13 @@ $diseno.innerHTML += Rec({ref:"https://online.visual-paradigm.com/login.jsp?t=di
 $diseno.innerHTML += Rec({ref:"https://create.piktochart.com/users/sign_in#text", src:"https://i.imgur.com/ZRQGWbC.jpg", pageName:"Piktochart"});
 $diseno.innerHTML += Rec({ref:"https://www.canva.com/", src:"https://i.imgur.com/2Ix98E3.jpg", pageName:"Canva"});
 
+
 // librerias
 $librerias.innerHTML += Rec({ref:"https://fontawesome.com/", src:"https://i.imgur.com/nXADxmQ.jpg", pageName:"FontAwesome"});
 $librerias.innerHTML += Rec({ref:"https://getbootstrap.com/docs/5.3/components/navbar/", src:"https://i.imgur.com/KcUopn5.jpg", pageName:"Bootstrap"});
 $librerias.innerHTML += Rec({ref:"https://animate.style/", src:"https://i.imgur.com/2stkeBI.jpg", pageName:"Animation.css"});
+$librerias.innerHTML += Rec({ref:"https://tabler-icons.io/", src:"", pageName:"Tabler Icons"});
+
 
 // documentacion
 $documentacion.innerHTML += Rec({ref:"https://overapi.com/", src:"https://i.imgur.com/aVL376k.jpg", pageName:"OverAPI"});
