@@ -51,7 +51,7 @@ $diseno.innerHTML += Rec({ref:"https://www.canva.com/", src:"https://i.imgur.com
 $librerias.innerHTML += Rec({ref:"https://fontawesome.com/", src:"https://i.imgur.com/nXADxmQ.jpg", pageName:"FontAwesome"});
 $librerias.innerHTML += Rec({ref:"https://getbootstrap.com/docs/5.3/components/navbar/", src:"https://i.imgur.com/KcUopn5.jpg", pageName:"Bootstrap"});
 $librerias.innerHTML += Rec({ref:"https://animate.style/", src:"https://i.imgur.com/2stkeBI.jpg", pageName:"Animation.css"});
-$librerias.innerHTML += Rec({ref:"https://tabler-icons.io/", src:"", pageName:"Tabler Icons"});
+$librerias.innerHTML += Rec({ref:"https://tabler-icons.io/", src:"https://i.imgur.com/u1bV9Oq.jpg", pageName:"Tabler Icons"});
 
 
 // documentacion
