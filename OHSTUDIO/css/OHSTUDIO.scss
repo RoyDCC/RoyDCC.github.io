@@ -22,7 +22,7 @@ p,a{
 .animatedFadeUp{
     transform: translateY(50px);
     opacity: 0;
-    transition: 1s;
+    transition: 250ms;
 }
 .animatedFadeUp.fadeUp{
     opacity: 1;
@@ -104,15 +104,16 @@ p,a{
 
     .content_img{
         width: 49%;
+        border-radius: 10px;
+        overflow: hidden;
 
         img, video{
             width: 100%;
             height: 100%;
             object-fit: cover;
-            border-radius: 10px;
 
             &:hover{
-                filter: blur(5px);
+                filter: blur(5px) brightness(0.8);
                 opacity: 0.7;
             }
         }
