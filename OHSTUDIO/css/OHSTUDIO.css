@@ -139,7 +139,7 @@ p, a {
 .main_img_container .content_img .img-title {
   position: absolute;
   top: 20px;
-  font-size: 1.1rem;
+  font-size: 1rem;
   opacity: 0;
   left: 25px;
   transition: 500ms;
@@ -203,6 +203,19 @@ footer .copy_net .nets {
   }
   .main_img_container .content_img {
     width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .main_img_container .content_img .card-arrow {
+    display: none;
+  }
+  .main_img_container .content_img .img-title {
+    color: black;
+    position: initial;
+    opacity: 1;
+  }
+  .main_img_container .content_img img, .main_img_container .content_img video {
+    border-radius: 10px;
   }
   .main_img_container .content_img img:hover, .main_img_container .content_img video:hover {
     filter: none;
