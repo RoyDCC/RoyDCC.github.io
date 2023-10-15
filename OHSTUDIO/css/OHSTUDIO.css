@@ -141,4 +141,10 @@ footer .copy_net {
 footer .copy_net .nets {
   display: flex;
   gap: 1rem;
+}
+
+@media (min-width: 1250px) {
+  .initial_title h1 {
+    font-size: 72px;
+  }
 }/*# sourceMappingURL=OHSTUDIO.css.map */
