@@ -67,7 +67,7 @@ p, a {
 }
 
 .initial_title {
-  padding: 3rem 0;
+  padding: 3rem 2rem;
   min-height: 300px;
 }
 .initial_title h1 {
@@ -146,5 +146,35 @@ footer .copy_net .nets {
 @media (min-width: 1250px) {
   .initial_title h1 {
     font-size: 72px;
+  }
+}
+@media (max-width: 700px) {
+  .initial_title {
+    display: grid;
+    place-content: center;
+    min-height: 45vw;
+    padding: 0 20px 32px;
+  }
+  .initial_title h1 {
+    font-size: 2.3rem;
+  }
+  .initial_title .expertice {
+    display: none;
+  }
+  .main_img_container {
+    padding: 32px 20px;
+  }
+  .main_img_container .content_img {
+    width: 100%;
+  }
+  .main_img_container .content_img img:hover, .main_img_container .content_img video:hover {
+    filter: none;
+    opacity: 1;
+  }
+  footer .foot_txt_container {
+    padding: 3rem 4rem;
+  }
+  footer .foot_txt_container h2 {
+    font-size: 2rem;
   }
 }/*# sourceMappingURL=OHSTUDIO.css.map */
