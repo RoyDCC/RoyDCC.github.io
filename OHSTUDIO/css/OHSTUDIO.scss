@@ -71,7 +71,10 @@ p,a{
 
 .initial_title{
     padding: 3rem 2rem;
-    min-height: 300px;
+    min-height: 45vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     h1{
         font-size: 3.2rem;
@@ -168,6 +171,10 @@ footer{
 
     .foot_txt_container{
         padding: 2rem 0 3rem;
+        min-height: 45vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
     
         h2{
             font-size: 2.5rem;
@@ -203,7 +210,6 @@ footer{
     .initial_title{
         display: grid;
         place-content: center;
-        min-height: 45vw;
         padding: 0 20px 32px;
 
         h1{
