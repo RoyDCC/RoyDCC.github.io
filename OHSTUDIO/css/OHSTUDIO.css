@@ -24,6 +24,19 @@ p, a {
   font-size: 14px;
 }
 
+.shop-btn {
+  width: 100%;
+  text-align: center;
+}
+.shop-btn a {
+  padding: 10px 20px;
+  border-radius: 50px;
+  position: fixed;
+  bottom: 2rem;
+  color: white;
+  background-color: black;
+}
+
 .animatedFadeUp {
   transform: translateY(100px);
   opacity: 0;

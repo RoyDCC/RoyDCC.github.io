@@ -20,6 +20,18 @@ a{
 p,a{
     font-size: 14px;
 }
+.shop-btn{
+    width: 100%;
+    text-align: center;
+    a{
+        padding: 10px 20px;
+        border-radius: 50px;
+        position: fixed;
+        bottom: 2rem;
+        color: white;
+        background-color: black;
+    }
+}
 
 // FADE IN ANIMATION
 .animatedFadeUp{
