@@ -1,3 +1,31 @@
+:root {
+  --bonsaigreen: #00b289;
+  --bonsaigrey: #4c4d5f;
+  --bonsaiyellow: #f8db62;
+  --bonsaibg: #fcfcfe;
+}
+
 * {
   margin: 0;
+}
+
+strong {
+  font-weight: bold;
+}
+
+small {
+  font-size: 15px;
+}
+
+p {
+  font-size: 17px;
+}
+
+body {
+  background-color: var(--bonsaibg);
+}
+
+main #plans .addons .options .option {
+  display: flex;
+  align-items: center;
 }/*# sourceMappingURL=bonsai.css.map */
