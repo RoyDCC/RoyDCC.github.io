@@ -25,7 +25,26 @@ body {
   background-color: var(--bonsaibg);
 }
 
+.shad {
+  box-shadow: 0 0 60px 0 rgba(2, 4, 69, 0.05);
+}
+
+main #plans .plans-cards {
+  padding: 4%;
+}
+main #plans .plans-cards .cards {
+  display: flex;
+  justify-content: space-between;
+}
+main #plans .plans-cards .cards .ind-plan {
+  padding: 6% 4%;
+  width: 30.6666666667%;
+}
+main #plans .plans-cards .cards .ind-plan .card-price {
+  border-bottom: var(--bonsaigreen) 1px solid;
+}
 main #plans .addons .options .option {
   display: flex;
   align-items: center;
+  background-color: white;
 }/*# sourceMappingURL=bonsai.css.map */

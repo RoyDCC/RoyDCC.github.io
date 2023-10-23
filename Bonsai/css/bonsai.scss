@@ -20,13 +20,35 @@ body{
     background-color: var(--bonsaibg);
 }
 
+.shad{
+    box-shadow: 0 0 60px 0 rgba(2,4,69,.05);
+}
+
 main{
     #plans{
+        .plans-cards{
+            padding: 4%;
+
+            .cards{
+                display: flex;
+                justify-content: space-between;
+
+                .ind-plan{
+                    padding: 6% 4%;
+                    width: calc(92%/3);
+    
+                    .card-price{
+                        border-bottom: var(--bonsaigreen) 1px solid;
+                    }
+                }
+            }
+        }
         .addons{
             .options{
                 .option{
                     display: flex;
                     align-items: center;
+                    background-color: white;
                 }
             }
         }
