@@ -33,10 +33,12 @@ body{
 }
 
 main{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 4%;
+
     #plans{
         .plans-cards{
-            padding: 4%;
-
             .cards{
                 display: flex;
                 justify-content: space-between;
@@ -45,6 +47,7 @@ main{
                     display: flex;
                     gap: 2rem;
                     flex-direction: column;
+                    max-width: 430px;
                     justify-content: space-between;
                     position: relative;
                     padding: 6% 4%;
