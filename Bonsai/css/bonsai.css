@@ -47,6 +47,7 @@ main {
 main #plans .plans-cards .cards {
   display: flex;
   justify-content: space-between;
+  color: var(--bonsaigrey);
 }
 main #plans .plans-cards .cards .ind-plan {
   display: flex;
@@ -55,6 +56,7 @@ main #plans .plans-cards .cards .ind-plan {
   max-width: 430px;
   justify-content: space-between;
   position: relative;
+  border-radius: 16px;
   padding: 6% 4%;
   width: 30.6666666667%;
   overflow: hidden;
@@ -69,6 +71,19 @@ main #plans .plans-cards .cards .ind-plan .btn-green {
 }
 main #plans .plans-cards .cards .ind-plan .card-price {
   border-bottom: var(--bonsaigreen) 1px solid;
+  font-size: 3.5rem;
+  margin-top: 25px;
+  margin-bottom: 2rem;
+}
+main #plans .plans-cards .cards .ind-plan .card-price .dollar {
+  font-size: 1.3rem;
+  position: relative;
+  bottom: 23px;
+  margin-right: 8px;
+}
+main #plans .plans-cards .cards .ind-plan .card-price .card-month {
+  font-weight: normal;
+  font-size: 1.5rem;
 }
 main #plans .plans-cards .cards .ind-plan .popular {
   background-color: var(--bonsaigreen);
@@ -80,13 +95,23 @@ main #plans .plans-cards .cards .ind-plan .popular {
   font-weight: bold;
   padding: 0.5rem 4rem;
 }
+main #plans .addons {
+  padding: 3rem 0;
+}
+main #plans .addons .addons-h2 {
+  padding: 2rem 0;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 2.2rem;
+}
 main #plans .addons .options .option {
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: white;
-  margin-bottom: 10px;
-  padding: 2rem 5% 2rem 2rem;
+  margin-bottom: 16px;
+  padding: 3rem 5% 3rem 2rem;
+  border-radius: 16px;
 }
 main #plans .addons .options .option .opt-txt a {
   color: var(--bonsaigreen);

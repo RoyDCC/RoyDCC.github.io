@@ -43,6 +43,7 @@ main{
             .cards{
                 display: flex;
                 justify-content: space-between;
+                color: var(--bonsaigrey);
 
                 .ind-plan{
                     display: flex;
@@ -51,6 +52,7 @@ main{
                     max-width: 430px;
                     justify-content: space-between;
                     position: relative;
+                    border-radius: 16px;
                     padding: 6% 4%;
                     width: calc(92%/3);
                     overflow: hidden    ;
@@ -67,6 +69,20 @@ main{
                     }
                     .card-price{
                         border-bottom: var(--bonsaigreen) 1px solid;
+                        font-size: 3.5rem;
+                        margin-top: 25px;
+                        margin-bottom: 2rem;
+
+                        .dollar{
+                            font-size: 1.3rem;
+                            position: relative;
+                            bottom: 23px;
+                            margin-right: 8px;
+                        }
+                        .card-month{
+                            font-weight: normal;
+                            font-size: 1.5rem;
+                        }
                     }
                     .popular{
                         background-color: var(--bonsaigreen);
@@ -82,14 +98,25 @@ main{
             }
         }
         .addons{
+            padding: 3rem 0;
+
+            .addons-h2{
+                padding: 2rem 0;
+                text-align: center;
+                font-weight: lighter;
+                font-size: 2.2rem;
+            }
+
             .options{
                 .option{
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
                     background-color: white;
-                    margin-bottom: 10px;
-                    padding: 2rem 5% 2rem 2rem;
+                    margin-bottom: 16px;
+                    padding: 3rem 5% 3rem 2rem;
+                    border-radius: 16px;
+
                     .opt-txt{
                         a{
                             color: var(--bonsaigreen);
