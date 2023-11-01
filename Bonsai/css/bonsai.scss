@@ -17,10 +17,17 @@ small{
 p{
     font-size: 17px;
 }
+p, h3, a{
+    color: var(--bonsaigrey);
+}
 body{
     background-color: var(--bonsaibg);
 }
-
+.content-sizing{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 4%;
+}
 .shad{
     box-shadow: 0 0 60px 0 rgba(2,4,69,.05);
 }
@@ -34,10 +41,6 @@ body{
 }
 
 main{
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: 4%;
-
     #plans{
         .plans-cards{
             .cards{
@@ -150,6 +153,35 @@ main{
                         }
                     }
                 }
+            }
+        }
+    }
+    #faqs{
+        padding: 1rem 15%;
+
+        h2{
+            color: var(--bonsaigreen);
+            text-align: center;
+            padding-bottom: 1.5rem;
+            font-size: 2.1rem;
+        }
+
+        summary{
+            cursor: pointer;
+            display: flex;
+            list-style: none;
+            color: var(--bonsaigrey);
+            font-size: 1.6rem;
+            transition: 250ms;
+            margin: 1.5rem 0;
+            font-weight: bold;
+
+            &:hover{
+                color: var(--bonsaigreen);
+            }
+
+            .down-summary{
+                margin-left: auto;
             }
         }
     }

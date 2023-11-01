@@ -22,8 +22,18 @@ p {
   font-size: 17px;
 }
 
+p, h3, a {
+  color: var(--bonsaigrey);
+}
+
 body {
   background-color: var(--bonsaibg);
+}
+
+.content-sizing {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 4%;
 }
 
 .shad {
@@ -39,11 +49,6 @@ body {
   border-radius: 8px;
 }
 
-main {
-  max-width: 1300px;
-  margin: 0 auto;
-  padding: 4%;
-}
 main #plans .plans-cards .cards {
   display: flex;
   justify-content: space-between;
@@ -141,4 +146,29 @@ main #plans .addons .options .option .opt-price {
 }
 main #plans .addons .options .option .opt-price small {
   font-weight: normal;
+}
+main #faqs {
+  padding: 1rem 15%;
+}
+main #faqs h2 {
+  color: var(--bonsaigreen);
+  text-align: center;
+  padding-bottom: 1.5rem;
+  font-size: 2.1rem;
+}
+main #faqs summary {
+  cursor: pointer;
+  display: flex;
+  list-style: none;
+  color: var(--bonsaigrey);
+  font-size: 1.6rem;
+  transition: 250ms;
+  margin: 1.5rem 0;
+  font-weight: bold;
+}
+main #faqs summary:hover {
+  color: var(--bonsaigreen);
+}
+main #faqs summary .down-summary {
+  margin-left: auto;
 }/*# sourceMappingURL=bonsai.css.map */
