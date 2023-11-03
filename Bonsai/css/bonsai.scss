@@ -19,9 +19,24 @@ p{
 }
 p, h3, a{
     color: var(--bonsaigrey);
+    text-decoration: none;
 }
 body{
     background-color: var(--bonsaibg);
+}
+.btn{
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+.green-btn{
+    background-color: var(--bonsaigreen);
+    color: white;
+}
+.white-btn{
+    background-color: white;
+    color: var(--bonsaigreen);
+    border: 1px solid var(--bonsaigreen);
 }
 .content-sizing{
     max-width: 1300px;
@@ -38,6 +53,30 @@ body{
     min-width: 10rem;
     padding: 1rem;
     border-radius: 8px;
+}
+
+
+.nav-m{
+    background-color: white;
+
+    .nav-wrapper{
+        display: flex;
+        justify-content: space-between;
+        padding: 32px 4%;
+        max-width: 1300px;
+        margin: auto;
+        align-items: center;
+
+        .links-nav{
+            font-size: 1.1rem;
+            flex: 1;
+            text-align: center;
+
+            a{
+                margin: 0 1.5rem;
+            }
+        }
+    }
 }
 
 main{
