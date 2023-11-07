@@ -75,5 +75,3 @@ $otros.innerHTML += Rec({ref:"https://www.cssmatic.com/", src:"https://i.imgur.c
 $otros.innerHTML += Rec({ref:"https://bennettfeely.com/clippy/", src:"https://i.imgur.com/ifBftxd.jpg", pageName:"ClipPath"});
 $otros.innerHTML += Rec({ref:"https://randomuser.me/", src:"https://i.imgur.com/CN5qy9S.jpg", pageName:"RandomUser"});
 $otros.innerHTML += Rec({ref:"https://fakestoreapi.com/", src:"https://i.imgur.com/qJZ9BoX.jpg", pageName:"StoreAPI"});
-
-
