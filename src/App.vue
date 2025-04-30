@@ -1,14 +1,6 @@
 <template>
   <div id="app">
-    <!-- Header -->
-    <header class="navbar">
-      <div class="logo">Mi Portafolio</div>
-      <nav class="nav-links">
-        <a href="#about">Sobre mí</a>
-        <a href="#projects">Proyectos</a>
-        <a href="#contact">Contacto</a>
-      </nav>
-    </header>
+    <SiteHeader />
 
     <!-- Main Content -->
     <main class="content">
@@ -22,8 +14,8 @@
         <h2>Mis Proyectos</h2>
         <p>Aquí encontrarás algunos de los proyectos en los que he trabajado:</p>
         <ul>
-          <li><strong>Proyecto 1:</strong> Descripción breve del proyecto.</li>
-          <li><strong>Proyecto 2:</strong> Descripción breve del proyecto.</li>
+          <li>Proyecto 1: Descripción breve del proyecto.</li>
+          <li>Proyecto 2: Descripción breve del proyecto.</li>
         </ul>
       </section>
 
@@ -50,31 +42,17 @@
 </template>
 
 <script setup>
+import SiteHeader from './components/SiteHeader.vue'
 const year = new Date().getFullYear()
 </script>
 
 <style scoped>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html, body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  width: 100%;
-  height: 100%;
-}
-
 #app {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-
 .navbar {
   background-color: #1e1e2f;
   color: white;
@@ -83,52 +61,42 @@ html, body {
   justify-content: space-between;
   align-items: center;
 }
-
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
 }
-
 .nav-links a {
   color: white;
   margin-left: 1rem;
   text-decoration: none;
   transition: color 0.3s;
 }
-
 .nav-links a:hover {
   color: #42b983;
 }
-
 .content {
   flex: 1;
   padding: 2rem;
 }
-
 section {
   margin-bottom: 2rem;
 }
-
 h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
-
 ul {
   list-style-type: none;
 }
-
 ul li {
   margin: 0.5rem 0;
 }
-
 .image {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
   margin-top: 1rem;
 }
-
 .footer {
   background-color: #1e1e2f;
   color: white;
@@ -136,13 +104,11 @@ ul li {
   padding: 1rem 2rem;
   font-size: 0.9rem;
 }
-
 .footer a {
   color: #42b983;
   text-decoration: none;
   margin: 0 0.5rem;
 }
-
 .footer a:hover {
   text-decoration: underline;
 }
