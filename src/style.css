@@ -7,7 +7,7 @@
   --custom-bg-primary: #13141a;
   --custom-text-primary: #eef2f7;
   --custom-text-cian: #00ffff;
-  --custom-text-desc: #fffc;
+  --custom-text-desc: #fffa;
   --custom-text-dark: #111217;
   --custom-glass-border: #1f3347;
   --custom-glass-bg: #111217cc;
@@ -24,6 +24,9 @@
 
   Gradientes
   linear-gradient(135deg, rgba(31,33,40,0.1), rgba(31,33,40,0.05)) (--gradient-glass) Gradiente sutil para efectos glass, usado en elementos con transparencia. */
+}
+html{
+  scroll-behavior: smooth;
 }
 .main-font {
   font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
@@ -52,10 +55,18 @@
 .glass-border-b {
   border-bottom: 1px solid var(--custom-glass-border);
 }
+.glass-border-t {
+  border-top: 1px solid var(--custom-glass-border);
+}
 .bg-glass {
   background-color: var(--custom-glass-bg);
   backdrop-filter: blur(12px);
 }
 .bg-cian-gradient {
   background: var(--custom-cian-gradient-bg);
+}
+.container-lg{
+  max-width: 900px;
+  margin: auto;
+  padding: 3rem 1rem;
 }
