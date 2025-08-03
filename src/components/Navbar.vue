@@ -1,6 +1,6 @@
 <template>
   <div
-    class="navbar bg-base-100 shadow-sm glass-border-b absolute top-0 bg-glass font-light"
+    class="navbar bg-base-100 shadow-sm glass-border-b absolute top-0 bg-glass font-light fixed"
   >
     <div class="navbar-start flex-grow">
       <div class="dropdown">
@@ -60,7 +60,7 @@
 <style scoped>
 .menu a,
 .menu summary {
-  color: var(--custom-text-menu);
+  color: var(--custom-text-desc);
   transition: 300ms;
 }
 .menu a:hover {

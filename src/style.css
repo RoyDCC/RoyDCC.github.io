@@ -7,9 +7,11 @@
   --custom-bg-primary: #13141a;
   --custom-text-primary: #eef2f7;
   --custom-text-cian: #00ffff;
-  --custom-text-menu: #edF2f7cc;
+  --custom-text-desc: #fffc;
   --custom-glass-border: #1f3347;
   --custom-glass-bg: #111217cc;
+  --custom-hero-gradient-bg: linear-gradient(135deg, #13141a, #25262e);
+  --custom-cian-gradient-bg: linear-gradient(135deg, #00ffff, #4dffff);
   /* Colores Principales
   #1a1c24 (--card: 230 15% 12%) Fondo de tarjetas y elementos contenedores como las cards de contacto y proyectos.
   #4dffff (--primary-glow: 185 100% 70%) Variante brillante del cian, usado en efectos hover y estados activos.
@@ -18,8 +20,6 @@
   #2a2b34 (--border: 230 15% 20%) Color de bordes, usado en inputs y separadores de elementos.
 
   Gradientes
-  linear-gradient(135deg, #00ffff, #4dffff) (--gradient-primary) Gradiente principal cian, usado en botones principales y texto destacado.
-  linear-gradient(135deg, #13141a, #25262e) (--gradient-hero) Gradiente del hero, usado como overlay en la sección principal.
   linear-gradient(135deg, rgba(31,33,40,0.1), rgba(31,33,40,0.05)) (--gradient-glass) Gradiente sutil para efectos glass, usado en elementos con transparencia. */
 }
 .main-font{
