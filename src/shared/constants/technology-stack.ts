@@ -5,6 +5,6 @@ export interface Technology {
 
 export const technologies: Technology[] = [
     {
-        name: 'CSS', icon: "/src/shared/assets/css3.svg"
+        name: 'CSS', icon: "/icons/css3.svg"
     }
 ];
