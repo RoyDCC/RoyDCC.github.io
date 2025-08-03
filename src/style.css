@@ -1,79 +1,43 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: false;
+}
+
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  --custom-bg-primary: #13141a;
+  --custom-text-primary: #eef2f7;
+  --custom-text-cian: #00ffff;
+  --custom-text-menu: #edF2f7cc;
+  --custom-glass-border: #1f3347;
+  --custom-glass-bg: #111217cc;
+  /* Colores Principales
+  #1a1c24 (--card: 230 15% 12%) Fondo de tarjetas y elementos contenedores como las cards de contacto y proyectos.
+  #4dffff (--primary-glow: 185 100% 70%) Variante brillante del cian, usado en efectos hover y estados activos.
+  #25262e (--secondary: 230 15% 18%) Color secundario, usado en botones secundarios y elementos menos prominentes.
+  #cc00ff (--accent: 280 100% 60%) Púrpura de acento, definido pero usado mínimamente en el diseño actual.
+  #2a2b34 (--border: 230 15% 20%) Color de bordes, usado en inputs y separadores de elementos.
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  Gradientes
+  linear-gradient(135deg, #00ffff, #4dffff) (--gradient-primary) Gradiente principal cian, usado en botones principales y texto destacado.
+  linear-gradient(135deg, #13141a, #25262e) (--gradient-hero) Gradiente del hero, usado como overlay en la sección principal.
+  linear-gradient(135deg, rgba(31,33,40,0.1), rgba(31,33,40,0.05)) (--gradient-glass) Gradiente sutil para efectos glass, usado en elementos con transparencia. */
 }
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+.main-font{
+  font-family: ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
 }
-a:hover {
-  color: #535bf2;
+.bg-default{
+  background-color: var(--custom-bg-primary);
 }
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+.text-white{
+  color: var(--custom-text-primary);
 }
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.text-cian{
+  color: var(--custom-text-cian);
 }
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
+.glass-border-b{
+  border-bottom: 1px solid var(--custom-glass-border);
 }
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-.card {
-  padding: 2em;
-}
-
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.bg-glass{
+  background-color: var(--custom-glass-bg);
+  backdrop-filter: blur(12px);
 }
