@@ -1,6 +1,6 @@
 <template>
   <div
-    class="navbar bg-base-100 shadow-sm glass-border-b absolute top-0 bg-glass font-light fixed"
+    class="navbar bg-base-100 shadow-sm glass-border-b top-0 bg-glass font-light fixed"
   >
     <div class="navbar-start flex-grow">
       <div class="dropdown">
