@@ -1,15 +1,18 @@
 <template>
   <article
-    class="icon-card cursor-pointer transition duration-200 glass-border-full rounded-xl py-5 px-4 min-w-30 md:py-6 md:px-10 w-1/5 flex-grow"
+    class="icon-card cursor-pointer transition duration-200 glass-border-full rounded-xl flex-grow"
+    :class="cardStyle"
   >
     <figure>
       <img
         :src="props.icon"
         :alt="props.title"
-        class="w-11/12 max-w-15 max-h-15 rounded-lg m-auto drop-light transition duration-200"
+        class="rounded-lg m-auto drop-light transition duration-200"
+        :class="imgStyle"
       />
       <figcaption
-        class="transition duration-200 mt-5 text-desc text-lg text-center"
+        class="transition duration-200 text-desc text-center"
+        :class="figcaptionStyle"
       >
         {{ props.title }}
       </figcaption>
@@ -18,6 +21,8 @@
 </template>
 
 <script setup lang="ts">
+import { computed } from "vue";
+
 interface CardProps {
   title: string;
   icon: string;
@@ -27,6 +32,20 @@ interface CardProps {
 const props = withDefaults(defineProps<CardProps>(), {
   size: "base",
 });
+
+const isSmall = computed(() => props.size == "small");
+
+const cardStyle = computed(() =>
+  isSmall.value ? "w-25 max-w-27 py-3 px-2" : "w-1/5 min-w-30 bg-soft py-5 px-4 md:py-6 md:px-10"
+);
+
+const imgStyle = computed(() =>
+  isSmall.value ? "w-7 h-7" : "max-w-15 max-h-15 w-11/12"
+);
+
+const figcaptionStyle = computed(()=>
+  isSmall.value ? "mt-2 text-sm" : "mt-5 text-base"
+)
 </script>
 
 <style scoped>

@@ -27,7 +27,7 @@ export const technologies: Technology[] = [
   {
     name: "CSS",
     icon: "/icons/css3.svg",
-    main: false,
+    main: true,
     active: true,
   },
   {
@@ -45,7 +45,7 @@ export const technologies: Technology[] = [
   {
     name: "HTML",
     icon: "/icons/html5.svg",
-    main: true,
+    main: false,
     active: true,
   },
   {

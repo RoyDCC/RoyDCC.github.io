@@ -41,6 +41,9 @@ html {
 .bg-light {
   background-color: var(--custom-light-bg);
 }
+.bg-soft {
+  background-color: var(--custom-soft-bg);
+}
 .bg-glass {
   background-color: var(--custom-glass-bg);
   backdrop-filter: blur(12px);
@@ -60,6 +63,10 @@ html {
 .text-desc {
   color: var(--custom-text-desc);
   font-weight: lighter;
+}
+.text-desc-regular {
+  color: var(--custom-text-desc);
+  font-weight: 400;
 }
 .text-cian {
   color: var(--custom-text-cian);
