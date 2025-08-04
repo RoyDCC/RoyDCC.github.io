@@ -10,8 +10,10 @@
   --custom-text-desc: #fffa;
   --custom-text-dark: #111217;
   --custom-glass-border: #1f3347;
+  --custom-glass-border-hover: #314e6a;
   --custom-glass-bg: #111217cc;
   --custom-light-bg: #272935;
+  --custom-soft-bg: #0003;
 
   --custom-hero-gradient-bg: linear-gradient(135deg, #13141a, #25262e);
   --custom-cian-gradient-bg: linear-gradient(135deg, #00ffff, #4dffff);
@@ -25,7 +27,7 @@
   Gradientes
   linear-gradient(135deg, rgba(31,33,40,0.1), rgba(31,33,40,0.05)) (--gradient-glass) Gradiente sutil para efectos glass, usado en elementos con transparencia. */
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 .main-font {
@@ -36,9 +38,22 @@ html{
   background: var(--custom-bg-primary);
   background-color: var(--custom-bg-primary);
 }
-.bg-light{
+.bg-light {
   background-color: var(--custom-light-bg);
-} 
+}
+.bg-soft {
+  background-color: var(--custom-soft-bg);
+}
+.bg-glass {
+  background-color: var(--custom-glass-bg);
+  backdrop-filter: blur(12px);
+}
+.bg-cian-gradient {
+  background: var(--custom-cian-gradient-bg);
+}
+.drop-light {
+  filter: drop-shadow(1px 1px 4px #352e2e);
+}
 .text-black {
   color: var(--custom-text-dark);
 }
@@ -49,8 +64,15 @@ html{
   color: var(--custom-text-desc);
   font-weight: lighter;
 }
+.text-desc-regular {
+  color: var(--custom-text-desc);
+  font-weight: 400;
+}
 .text-cian {
   color: var(--custom-text-cian);
+}
+.glass-border-full {
+  border: 1px solid var(--custom-glass-border);
 }
 .glass-border-b {
   border-bottom: 1px solid var(--custom-glass-border);
@@ -58,15 +80,8 @@ html{
 .glass-border-t {
   border-top: 1px solid var(--custom-glass-border);
 }
-.bg-glass {
-  background-color: var(--custom-glass-bg);
-  backdrop-filter: blur(12px);
-}
-.bg-cian-gradient {
-  background: var(--custom-cian-gradient-bg);
-}
-.container-lg{
+.container-lg {
   max-width: 900px;
   margin: auto;
-  padding: 3rem 1rem;
+  padding: 4rem 1rem;
 }
