@@ -3,10 +3,10 @@
     <div class="footer-wrapper max-w-7xl m-auto flex flex-col md:flex-row justify-between items-center gap-8">
       <div class="links-container flex flex-row gap-5 justify-center items-center">
         <a href="https://github.com/RoyDCC" target="_blank" class="inline-block w-10 h-10">
-          <img src="../assets/github.svg" alt="Github Link" />
+          <img src="/icons/github.svg" alt="Github Link" class="opacity-65"/>
         </a>
         <a href="#" class="inline-block w-10 h-10">
-          <img src="../assets/linkedin.svg" alt="Linkedin Link" />
+          <img src="/icons/linkedin.svg" alt="Linkedin Link" class="opacity-65"/>
         </a>
       </div>
 

@@ -35,7 +35,7 @@ const props = withDefaults(defineProps<CardProps>(), {
 
 
 const cardStyle = computed(() =>
-  props.smallCard ? "w-25 w-27 py-3 px-2 sm:max-w-30" : "w-1/5 min-w-30 bg-soft py-5 px-4 md:py-6 md:px-10"
+  props.smallCard ? "w-25 w-27 py-3 px-2 sm:max-w-30" : "w-1/5 min-w-30 bg-soft-blue py-5 px-4 md:py-6 md:px-10"
 );
 
 const imgStyle = computed(() =>

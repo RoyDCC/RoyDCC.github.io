@@ -1,5 +1,5 @@
 <template>
-  <HeroContainer />
+  <HeroContainer class="py-15" />
   
   <div class="techstack-container mt-8 py-10 px-4">
     <TechStack />

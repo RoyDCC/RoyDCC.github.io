@@ -6,13 +6,14 @@
     <p class="text-desc text-lg">
       Transformemos tus ideas en soluciones digitales
     </p>
-    <a href="#">
+    
+    <router-link to="/contact">
       <button
         class="px-7 py-3 cursor-pointer border-0 bg-cian-gradient text-black rounded-lg font-medium transition duration-250 hover:scale-103"
       >
-        Ver Proyectos
+        Contacto
       </button>
-    </a>
+    </router-link>
   </section>
 </template>
 

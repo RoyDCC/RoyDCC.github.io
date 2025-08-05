@@ -7,7 +7,7 @@
         <div class="dropdown">
           <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
             <img
-              src="../assets/menu-icon.svg"
+              src="/icons/menu-icon.svg"
               alt="Menu"
               class="invert w-7 h-7"
             />
