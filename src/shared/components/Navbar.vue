@@ -12,17 +12,17 @@
             tabindex="0"
             class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow bg-default rounded-lg"
           >
-            <li class="text-base"><a class="rounded-xl">Inicio</a></li>
-            <li class="text-base">
-              <a class="rounded-xl">Recursos</a>
+            <li><a class="rounded-xl text-base">Inicio</a></li>
+            <li>
+              <a class="rounded-xl text-base">Recursos</a>
               <ul class="p-2">
-                <li class="text-base"><a class="rounded-xl">Graficos</a></li>
-                <li class="text-base">
-                  <a class="rounded-xl">Documentación</a>
+                <li><a class="rounded-xl text-base">Graficos</a></li>
+                <li>
+                  <a class="rounded-xl text-base">Documentación</a>
                 </li>
               </ul>
             </li>
-            <li class="text-base"><a class="rounded-xl">Contacto</a></li>
+            <li><a class="rounded-xl text-base">Contacto</a></li>
           </ul>
         </div>
         <a class="text-xl text-cian font-bold" href="/">RDC</a>

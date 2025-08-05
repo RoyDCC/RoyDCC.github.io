@@ -19,6 +19,12 @@ export const technologies: Technology[] = [
     active: true,
   },
   {
+    name: "cPanel",
+    icon: "/icons/cpanel.svg",
+    main: false,
+    active: true,
+  },
+  {
     name: "C#",
     icon: "/icons/csharp.svg",
     main: false,

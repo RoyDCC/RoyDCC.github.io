@@ -4,7 +4,7 @@
 }
 
 :root {
-  --custom-bg-primary: #13141a;
+  --custom-bg-primary: #111217;
   --custom-text-primary: #eef2f7;
   --custom-text-cian: #00ffff;
   --custom-text-desc: #fffa;
@@ -52,7 +52,7 @@ html {
   background: var(--custom-cian-gradient-bg);
 }
 .drop-light {
-  filter: drop-shadow(1px 1px 4px #352e2e);
+  filter: drop-shadow(1px 1px 4px #28b4b424);
 }
 .text-black {
   color: var(--custom-text-dark);
@@ -82,6 +82,5 @@ html {
 }
 .container-lg {
   max-width: 900px;
-  margin: auto;
-  padding: 4rem 1rem;
+  margin-inline: auto;
 }

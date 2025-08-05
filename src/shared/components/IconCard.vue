@@ -1,17 +1,17 @@
 <template>
   <article
-    class="icon-card cursor-pointer transition duration-200 glass-border-full rounded-xl flex-grow"
+    class="icon-card cursor-pointer transition duration-300 glass-border-full rounded-xl flex-grow"
     :class="cardStyle"
   >
     <figure>
       <img
         :src="props.icon"
         :alt="props.title"
-        class="rounded-lg m-auto drop-light transition duration-200"
+        class="rounded-lg m-auto drop-light transition duration-300"
         :class="imgStyle"
       />
       <figcaption
-        class="transition duration-200 text-desc text-center"
+        class="transition duration-300 text-desc text-center"
         :class="figcaptionStyle"
       >
         {{ props.title }}
@@ -26,25 +26,24 @@ import { computed } from "vue";
 interface CardProps {
   title: string;
   icon: string;
-  size?: "small" | "base";
+  smallCard?: boolean;
 }
 
 const props = withDefaults(defineProps<CardProps>(), {
-  size: "base",
+  smallCard: false,
 });
 
-const isSmall = computed(() => props.size == "small");
 
 const cardStyle = computed(() =>
-  isSmall.value ? "w-25 max-w-27 py-3 px-2" : "w-1/5 min-w-30 bg-soft py-5 px-4 md:py-6 md:px-10"
+  props.smallCard ? "w-25 w-27 py-3 px-2 sm:max-w-30" : "w-1/5 min-w-30 bg-soft py-5 px-4 md:py-6 md:px-10"
 );
 
 const imgStyle = computed(() =>
-  isSmall.value ? "w-7 h-7" : "max-w-15 max-h-15 w-11/12"
+  props.smallCard ? "w-7 h-7" : "max-w-15 max-h-15 w-11/12"
 );
 
 const figcaptionStyle = computed(()=>
-  isSmall.value ? "mt-2 text-sm" : "mt-5 text-base"
+  props.smallCard ? "mt-2 text-sm" : "mt-5 text-base"
 )
 </script>
 
@@ -56,6 +55,6 @@ const figcaptionStyle = computed(()=>
   color: var(--custom-text-primary);
 }
 .icon-card:hover img {
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 </style>
