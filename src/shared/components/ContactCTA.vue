@@ -1,6 +1,6 @@
 <template>
   <section
-    class="text-center glass-border-full rounded-2xl py-15 px-3 flex flex-col gap-5"
+    class="container-lg text-center glass-border-full rounded-2xl py-15 px-3 flex flex-col gap-5"
   >
     <h1 class="text-3xl font-bold">¿Tienes un proyecto en mente?</h1>
     <p class="text-desc text-lg">

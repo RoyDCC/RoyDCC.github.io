@@ -5,7 +5,7 @@
     <TechStack />
   </div>
 
-  <div class="cta-container container-lg mb-15 py-12 px-4 drop-light">
+  <div class="cta-container mb-15 py-12 px-4 drop-light">
     <ContactCTA />
   </div>
 </template>

@@ -1,6 +1,6 @@
 <template>
     <div>
-        Resources
+        Contact
     </div>
 </template>
 

@@ -1,5 +1,5 @@
 <template>
-  <section class="hero hero-bg min-h-screen pt-15">
+  <section class="hero hero-bg min-h-screen">
     <div class="hero-content text-center">
       <div class="max-w-xl">
         <h1 class="text-5xl font-bold">Rodrigo Díaz de León C.</h1>
