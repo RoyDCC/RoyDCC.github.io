@@ -1,11 +1,11 @@
 <template>
-  <HeroContainer />
+  <HeroContainer class="py-15" />
   
   <div class="techstack-container mt-8 py-10 px-4">
     <TechStack />
   </div>
 
-  <div class="cta-container container-lg mb-15 py-12 px-4 drop-light">
+  <div class="cta-container mb-15 py-12 px-4 drop-light">
     <ContactCTA />
   </div>
 </template>

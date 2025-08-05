@@ -1,18 +1,19 @@
 <template>
   <section
-    class="text-center glass-border-full rounded-2xl py-15 px-3 flex flex-col gap-5"
+    class="container-lg text-center glass-border-full rounded-2xl py-15 px-3 flex flex-col gap-5"
   >
     <h1 class="text-3xl font-bold">¿Tienes un proyecto en mente?</h1>
     <p class="text-desc text-lg">
       Transformemos tus ideas en soluciones digitales
     </p>
-    <a href="#">
+    
+    <router-link to="/contact">
       <button
         class="px-7 py-3 cursor-pointer border-0 bg-cian-gradient text-black rounded-lg font-medium transition duration-250 hover:scale-103"
       >
-        Ver Proyectos
+        Contacto
       </button>
-    </a>
+    </router-link>
   </section>
 </template>
 
