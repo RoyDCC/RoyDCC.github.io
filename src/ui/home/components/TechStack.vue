@@ -15,7 +15,7 @@
       </div>
     </div>
 
-    <div class="other-tech mt-12 pt-5 glass-border-t">
+    <div class="other-tech mt-16 pt-10 glass-border-t">
       <h1 class="text-desc-regular text-2xl text-center mb-6">
         Otras tecnologías
       </h1>
@@ -26,7 +26,7 @@
           :title="tech.name"
           :icon="tech.icon"
           :key="tech.name"
-          size="small"
+          smallCard
         />
       </div>
     </div>
