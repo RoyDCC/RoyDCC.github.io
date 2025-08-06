@@ -7,7 +7,7 @@
         escuchar de ti!
       </p>
     </div>
-    <div class="contact-cards-container flex flex-row flex-wrap justify-center gap-5 py-10">
+    <div class="contact-cards-container flex flex-row flex-wrap justify-center gap-5 py-12">
       <ContactCard v-for="c in contactOptions" :title="c.title" :description="c.description" :icon="c.icon" :link="c.link" />
     </div>
   </section>

@@ -14,6 +14,9 @@
   --custom-glass-bg: #111217cc;
   --custom-light-bg: #272935;
   --custom-soft-bg: #0003;
+  --custom-bg-blue: #0f2a32;
+  --custom-bg-purple: #251934;
+  --custom-text-purple: #d072ff;
 
   --custom-hero-gradient-bg: linear-gradient(135deg, #13141a, #25262e);
   --custom-cian-gradient-bg: linear-gradient(135deg, #00ffff, #4dffff);
@@ -22,13 +25,11 @@
   #4dffff (--primary-glow: 185 100% 70%) Variante brillante del cian, usado en efectos hover y estados activos.
   #25262e (--secondary: 230 15% 18%) Color secundario, usado en botones secundarios y elementos menos prominentes.
   #cc00ff (--accent: 280 100% 60%) Púrpura de acento, definido pero usado mínimamente en el diseño actual.
-  #2a2b34 (--border: 230 15% 20%) Color de bordes, usado en inputs y separadores de elementos.
-
-  Gradientes
-  linear-gradient(135deg, rgba(31,33,40,0.1), rgba(31,33,40,0.05)) (--gradient-glass) Gradiente sutil para efectos glass, usado en elementos con transparencia. */
+  */
 }
 html {
   scroll-behavior: smooth;
+  overflow-y: scroll;
 }
 .main-font {
   font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
@@ -48,17 +49,27 @@ html {
   background-color: var(--custom-glass-bg);
   backdrop-filter: blur(12px);
 }
+.bg-purple{
+  background-color: var(--custom-bg-purple);
+}
 .bg-cian-gradient {
   background: var(--custom-cian-gradient-bg);
 }
 .bg-soft-blue {
   background-color: #15171d;
 }
+.bg-active-blue{
+  background-color: var(--custom-bg-blue);
+  color: var(--custom-text-cian);
+}
 .drop-light {
   filter: drop-shadow(1px 1px 4px #28b4b424);
 }
 .text-black {
   color: var(--custom-text-dark);
+}
+.text-purple {
+  color: var(--custom-text-purple);
 }
 .text-white {
   color: var(--custom-text-primary);
@@ -82,6 +93,9 @@ html {
 }
 .glass-border-t {
   border-top: 1px solid var(--custom-glass-border);
+}
+.border-purple{
+  border: 0.5px solid #3c1b53;
 }
 .container-lg {
   max-width: 900px;

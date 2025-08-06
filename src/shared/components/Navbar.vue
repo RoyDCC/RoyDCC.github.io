@@ -16,20 +16,20 @@
             tabindex="0"
             class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow bg-default rounded-lg"
           >
-            <li><router-link to="/" class="rounded-xl text-base">Inicio</router-link></li>
-            <li><router-link to="#" class="rounded-xl text-base">Proyectos</router-link></li>
-            <li><router-link to="/resources" class="rounded-xl text-base">Recursos</router-link></li>
-            <li><router-link to="/contact" class="rounded-xl text-base">Contacto</router-link></li>
+            <li><router-link active-class="bg-active-blue" to="/" class="rounded-xl text-base">Inicio</router-link></li>
+            <li><span active-class="bg-active-blue" to="#" class="rounded-xl text-base">Proyectos</span></li>
+            <li><router-link active-class="bg-active-blue" to="/resources" class="rounded-xl text-base">Recursos</router-link></li>
+            <li><router-link active-class="bg-active-blue" to="/contact" class="rounded-xl text-base">Contacto</router-link></li>
           </ul>
         </div>
         <router-link to="/" class="text-xl text-cian font-bold">RDC</router-link>
       </div>
       <div class="navbar-center hidden lg:flex pt-0">
         <ul class="menu menu-horizontal px-1 gap-5">
-          <li><router-link to="/" class="rounded-xl text-base">Inicio</router-link></li>
-          <li><router-link to="#" class="rounded-xl text-base">Proyectos</router-link></li>
-          <li><router-link to="/resources" class="rounded-xl text-base">Recursos</router-link></li>
-          <li><router-link to="/contact" class="rounded-xl text-base">Contacto</router-link></li>
+          <li><router-link active-class="bg-active-blue" to="/" class="rounded-xl text-base">Inicio</router-link></li>
+          <li><span active-class="bg-active-blue" to="#" class="rounded-xl text-base">Proyectos</span></li>
+          <li><router-link active-class="bg-active-blue" to="/resources" class="rounded-xl text-base">Recursos</router-link></li>
+          <li><router-link active-class="bg-active-blue" to="/contact" class="rounded-xl text-base">Contacto</router-link></li>
         </ul>
       </div>
     </div>
