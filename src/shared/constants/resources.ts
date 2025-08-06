@@ -287,13 +287,6 @@ export const resources: Resource[] = [
     category: "others",
   },
   {
-    pageLink: "https://www.cssmatic.com/",
-    description: "Descripcion generica del recurso como placeholder",
-    tags: ['tag1', 'tag2'],
-    pageName: "CssMatic",
-    category: "others",
-  },
-  {
     pageLink: "https://bennettfeely.com/clippy/",
     description: "Descripcion generica del recurso como placeholder",
     tags: ['tag1', 'tag2'],

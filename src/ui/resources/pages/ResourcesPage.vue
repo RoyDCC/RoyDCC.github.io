@@ -1,7 +1,7 @@
 <template>
   <section class="px-4 py-10 mt-15">
     <div class="resources-desc-container">
-      <h1 class="text-4xl font-bold text-center">
+      <h1 class="text-5xl font-bold text-center">
         Recursos para Desarrolladores
       </h1>
       <p class="text-xl text-desc mt-4 text-center">
@@ -24,9 +24,10 @@
         />
       </div>
 
-      <div class="resources-list">
-        <!-- <ResourceCard v-for="r in resources" :resource="r" /> -->
-         <ResourceCard :resource="resources[0]" />
+      <div
+        class="resources-list container-xl flex flex-wrap gap-6 justify-around py-20"
+      >
+        <ResourceCard v-for="r in resources" :resource="r" />
       </div>
     </article>
   </section>
@@ -40,6 +41,6 @@ import searchSVG from "/icons/search.svg";
 
 <style scoped>
 input:focus {
-  outline: .1px solid var(--custom-text-cian);
+  outline: 0.1px solid var(--custom-text-cian);
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
   <section class="text-center container-lg px-4 py-10 mt-15">
     <div class="contact-text-container">
-      <h1 class="text-4xl text-white font-bold">Contacto</h1>
+      <h1 class="text-5xl text-white font-bold">Contacto</h1>
       <p class="text-desc text-xl mt-3">
         ¿Tienes algún proyecto en mente o quieres colaborar?<br />¡Me encantaría
         escuchar de ti!
