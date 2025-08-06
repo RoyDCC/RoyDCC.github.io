@@ -1,6 +1,6 @@
 <template>
   <div
-    class="p-4 py-5 w-1/4 max-w-[450px] min-w-[280px] 
+    class="p-4 py-5 w-1/4 max-w-[450px] min-w-[300px] 
     glass-border-full rounded-xl bg-soft-blue 
     flex flex-col flex-grow relative gap-3 justify-between"
   >
@@ -10,10 +10,10 @@
 
     <h1 class="text-white text-xl font-semibold">{{ resource.pageName }}</h1>
     <p class="text-desc">{{ resource.description }}</p>
-    <ul class="flex flex-wrap text-sm gap-3">
+    <ul class="flex flex-wrap text-sm gap-2">
       <li
         v-for="t in resource.tags"
-        class="bg-purple text-purple border-purple font-light rounded-full p-1 px-3"
+        class="bg-purple text-purple border-purple font-light rounded-full p-1 px-3 capitalize"
       >
         {{ t }}
       </li>
