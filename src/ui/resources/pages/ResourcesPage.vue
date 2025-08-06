@@ -18,6 +18,7 @@
           class="w-7 h-7 object-contain absolute top-0 bottom-0 left-2 m-auto z-1 opacity-65 pointer-events-none"
         />
         <input
+          v-model="filterSearch"
           type="search"
           class="search-bar glass-border-full px-4 py-2 pl-11 w-full rounded-lg bg-soft-blue"
           placeholder="Buscar..."
@@ -25,18 +26,30 @@
       </div>
 
       <div
-        class="resources-list container-xl flex flex-wrap gap-6 justify-around py-20"
+        class="resources-list container-xl flex flex-wrap gap-6 justify-around py-15 pt-10"
       >
-        <ResourceCard v-for="r in resources" :resource="r" />
+        <ResourceCard v-for="r in filteredResources" :resource="r" />
       </div>
     </article>
   </section>
 </template>
 
 <script setup lang="ts">
+import { computed, ref } from "vue";
 import { resources } from "../../../shared/constants/resources";
 import ResourceCard from "../components/ResourceCard.vue";
 import searchSVG from "/icons/search.svg";
+
+const filterSearch = ref("");
+
+const filteredResources = computed(() => {
+  return resources.filter(
+    (r) =>
+      r.pageName.toLowerCase().includes(filterSearch.value.toLowerCase()) ||
+      r.category.toLowerCase().includes(filterSearch.value.toLowerCase()) ||
+      r.tags.some((tag) => tag.toLowerCase().includes(filterSearch.value))
+  );
+});
 </script>
 
 <style scoped>

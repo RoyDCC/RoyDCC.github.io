@@ -32,7 +32,7 @@ const props = defineProps<{ resource: Resource }>();
 .external-link {
   top: 17px;
   right: 17px;
-  transition: 100ms;
+  transition: 150ms;
   filter: brightness(65%);
 }
 .external-link:hover {

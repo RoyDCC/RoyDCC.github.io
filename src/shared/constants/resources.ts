@@ -160,7 +160,7 @@ export const resources: Resource[] = [
   {
     pageLink: "https://www.canva.com/",
     description: "Descripcion generica del recurso como placeholder",
-    tags: ['tag1', 'tag2'],
+    tags: ['tag1', 'Vue'],
     pageName: "Canva",
     category: "design",
   },
@@ -168,7 +168,7 @@ export const resources: Resource[] = [
   {
     pageLink: "https://fontawesome.com/",
     description: "Descripcion generica del recurso como placeholder",
-    tags: ['tag1', 'tag2'],
+    tags: ['Vue', 'tag2'],
     pageName: "FontAwesome",
     category: "libraries",
   },
