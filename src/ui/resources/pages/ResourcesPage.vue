@@ -25,6 +25,10 @@
         />
       </div>
 
+      <div class="filters-container">
+        
+      </div>
+
       <div
         class="resources-list container-xl flex flex-wrap gap-6 justify-around py-15 pt-10"
       >
@@ -39,9 +43,10 @@
 
 <script setup lang="ts">
 import { computed, ref } from "vue";
-import { resources, type Resource } from "../../../shared/constants/resources";
+import { resources } from "../../../shared/constants/resources";
 import ResourceCard from "../components/ResourceCard.vue";
 import searchSVG from "/icons/search.svg";
+import type { Resource } from "../../../shared/interfaces/resource.interface";
 
 const filterSearch = ref("");
 

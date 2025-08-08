@@ -1,19 +1,5 @@
-export interface Resource {
-  pageName: string;
-  pageLink: string;
-  description: string;
-  tags: string[];
-  category:
-    | "visual assets"
-    | "developer tools"
-    | "coding practice"
-    | "UI/UX & design inspiration"
-    | "frameworks & libraries"
-    | "learning & reference"
-    | "mock APIs & test data"
-    | "prototyping"
-    | "VS code extensions";
-}
+import { categories, type Resource } from "../interfaces/resource.interface";
+
 
 export const resources: Resource[] = [
   {
@@ -22,7 +8,7 @@ export const resources: Resource[] = [
     description:
       "Recurso con vectores, ilustraciones, iconos y fotos, gratuitos y premium.",
     tags: ["stock images", "illustrations", "media", "freemium"],
-    category: "visual assets",
+    category: categories.VISUAL_ASSETS,
   },
   {
     pageName: "Pexels",
@@ -30,7 +16,7 @@ export const resources: Resource[] = [
     description:
       "Banco gratuito de fotos y videos libres de derechos para proyectos creativos.",
     tags: ["stock images", "image library", "media"],
-    category: "visual assets",
+    category: categories.VISUAL_ASSETS,
   },
   {
     pageName: "Pixabay",
@@ -38,7 +24,7 @@ export const resources: Resource[] = [
     description:
       "Colección libre de imágenes, vectores, ilustraciones y videos para uso comercial.",
     tags: ["stock images", "illustrations", "media"],
-    category: "visual assets",
+    category: categories.VISUAL_ASSETS,
   },
   {
     pageName: "Unsplash",
@@ -46,7 +32,7 @@ export const resources: Resource[] = [
     description:
       "Fotos de alta resolución gratuitas para cualquier tipo de proyecto.",
     tags: ["stock images", "photography", "media"],
-    category: "visual assets",
+    category: categories.VISUAL_ASSETS,
   },
   {
     pageName: "Undraw",
@@ -54,28 +40,28 @@ export const resources: Resource[] = [
     description:
       "Ilustraciones SVG gratuitas, personalizables para proyectos e infografías.",
     tags: ["illustrations", "SVG library", "infographics"],
-    category: "visual assets",
+    category: categories.VISUAL_ASSETS,
   },
   {
     pageLink: "https://devicon.dev/",
     description: "Descripcion generica del recurso como placeholder",
     tags: ["icons", "tech logos", "open source", "SVG icons"],
     pageName: "Devicons",
-    category: "visual assets",
+    category: categories.VISUAL_ASSETS,
   },
   {
     pageLink: "https://fontawesome.com/",
     description: "Descripcion generica del recurso como placeholder",
     tags: ["icons", "UI elements", "SVG icons"],
     pageName: "FontAwesome",
-    category: "visual assets",
+    category: categories.VISUAL_ASSETS,
   },
   {
     pageLink: "https://tabler.io/icons",
     description: "Descripcion generica del recurso como placeholder",
     tags: ["icons", "SVG icons", "UI components", "open source"],
     pageName: "Tabler Icons",
-    category: "visual assets",
+    category: categories.VISUAL_ASSETS,
   },
   {
     pageName: "Uiverse",
@@ -83,7 +69,7 @@ export const resources: Resource[] = [
     description:
       "Fragmentos de código HTML y CSS open source listos para usar en interfaces web.",
     tags: ["UI elements", "CSS", "open source"],
-    category: "UI/UX & design inspiration",
+    category: categories.UI_UX_DESIGN_INSPIRATION,
   },
 
   {
@@ -92,7 +78,7 @@ export const resources: Resource[] = [
     description:
       "Loaders y spinners open source en HTML, CSS, SVG, y componentes web.",
     tags: ["loaders", "UI Elements", "NPM", "open source"],
-    category: "UI/UX & design inspiration",
+    category: categories.UI_UX_DESIGN_INSPIRATION,
   },
   {
     pageName: "ColorHunt",
@@ -101,7 +87,7 @@ export const resources: Resource[] = [
     description:
       "Galería online de paletas de colores gratuitas para diseño y desarrollo.",
     tags: ["color palettes", "design resources", "UI/UX"],
-    category: "UI/UX & design inspiration",
+    category: categories.UI_UX_DESIGN_INSPIRATION,
   },
   {
     pageName: "GoogleFonts",
@@ -109,7 +95,7 @@ export const resources: Resource[] = [
     description:
       "Repositorio online gratuito de fuentes tipográficas para uso web y proyectos digitales.",
     tags: ["fonts", "web typography", "open source", "design resources"],
-    category: "UI/UX & design inspiration",
+    category: categories.UI_UX_DESIGN_INSPIRATION,
   },
   {
     pageName: "Dribble",
@@ -117,7 +103,7 @@ export const resources: Resource[] = [
     description:
       " Inspiración visual en diseño web, UI/UX y branding creada por profesionales de todo el mundo.",
     tags: ["design inspiration", "UI/UX", "graphic design"],
-    category: "UI/UX & design inspiration",
+    category: categories.UI_UX_DESIGN_INSPIRATION,
   },
   {
     pageName: "Awwwards",
@@ -125,7 +111,7 @@ export const resources: Resource[] = [
     description:
       "Plataforma global que premia y exhibe los sitios web más creativos e innovadores. Inspiración visual para diseño y desarrollo.",
     tags: ["design inspiration", "UI/UX", "web design"],
-    category: "UI/UX & design inspiration",
+    category: categories.UI_UX_DESIGN_INSPIRATION,
   },
   {
     pageName: "Piktochart",
@@ -133,7 +119,7 @@ export const resources: Resource[] = [
     description:
       "Herramienta para crear infografías, reportes y presentaciones visuales con plantillas prediseñadas; versión gratuita limitada.",
     tags: ["infographics", "freemium"],
-    category: "UI/UX & design inspiration",
+    category: categories.UI_UX_DESIGN_INSPIRATION,
   },
   {
     pageName: "Canva",
@@ -141,7 +127,7 @@ export const resources: Resource[] = [
     description:
       "Plataforma online para crear diseños gráficos usando plantillas y herramientas visuales.",
     tags: ["templates", "graphic design", "visual content", "freemium"],
-    category: "UI/UX & design inspiration",
+    category: categories.UI_UX_DESIGN_INSPIRATION,
   },
   {
     pageName: "CodeWars",
@@ -149,7 +135,7 @@ export const resources: Resource[] = [
     description:
       "Plataforma para practicar programación con desafíos en múltiples lenguajes.",
     tags: ["programming", "challenges"],
-    category: "coding practice",
+    category: categories.CODING_PRACTICE,
   },
   {
     pageName: "Leetcode",
@@ -157,7 +143,7 @@ export const resources: Resource[] = [
     description:
       "Ejercicios de programación para mejorar habilidades técnicas y preparación de entrevistas.",
     tags: ["programming", "technical interviews", "freemium"],
-    category: "coding practice",
+    category: categories.CODING_PRACTICE,
   },
   {
     pageName: "HackerRank",
@@ -165,7 +151,7 @@ export const resources: Resource[] = [
     description:
       "Desafíos de programación y prepararse para entrevistas técnicas.",
     tags: ["programming", "technical interviews"],
-    category: "coding practice",
+    category: categories.CODING_PRACTICE,
   },
   {
     pageName: "Codeforces",
@@ -173,7 +159,7 @@ export const resources: Resource[] = [
     description:
       "Plataforma competitiva para practicar algoritmos y programación con concursos en tiempo real.",
     tags: ["competitive programming", "coding contests"],
-    category: "coding practice",
+    category: categories.CODING_PRACTICE,
   },
   {
     pageName: "Frontend Practice",
@@ -181,7 +167,7 @@ export const resources: Resource[] = [
     description:
       "Ejercicios para recrear sitios web reales, para mejorar habilidades de frontend.",
     tags: ["web development", "frontend code"],
-    category: "coding practice",
+    category: categories.CODING_PRACTICE,
   },
   {
     pageName: "Uizard",
@@ -189,7 +175,7 @@ export const resources: Resource[] = [
     description:
       "Creacion de  prototipos, wireframes y mockups interactivo. Versión gratuita limitada.",
     tags: ["templates", "UI/UX", "freemium"],
-    category: "prototyping",
+    category: categories.PROTOTYPING,
   },
   {
     pageName: "Bootstrap",
@@ -197,7 +183,7 @@ export const resources: Resource[] = [
     description:
       "Framework CSS open source para crear interfaces web responsivas y móviles con componentes listos para usar.",
     tags: ["CSS", "UI components", "open source"],
-    category: "frameworks & libraries",
+    category: categories.FRAMEWORKS_LIBRARIES,
   },
   {
     pageName: "Animation.css",
@@ -205,7 +191,7 @@ export const resources: Resource[] = [
     description:
       "Librería CSS de animaciones listas para usar, instalable vía npm o CDN, para mejorar interfaces web.",
     tags: ["CSS", "NPM", "open source"],
-    category: "frameworks & libraries",
+    category: categories.FRAMEWORKS_LIBRARIES,
   },
   {
     pageName: "OverAPI",
@@ -213,7 +199,7 @@ export const resources: Resource[] = [
     description:
       "Colección online de documentación y hojas de referencia para múltiples lenguajes y tecnologías.",
     tags: ["quick reference", "cheat sheets"],
-    category: "learning & reference",
+    category: categories.LEARNING_REFERENCE,
   },
   {
     pageName: "JS Info",
@@ -221,14 +207,14 @@ export const resources: Resource[] = [
     description:
       "Documentación completa y actualizada de JavaScript, desde lo básico hasta temas avanzados.",
     tags: ["JavaScript", "JS tutorial", "programming"],
-    category: "learning & reference",
+    category: categories.LEARNING_REFERENCE,
   },
   {
     pageName: "Shortcut Code",
     pageLink: "https://shortcode.dev/",
     description: "Descripcion generica del recurso como placeholder",
     tags: ["code snippets", "example code"],
-    category: "learning & reference",
+    category: categories.LEARNING_REFERENCE,
   },
   {
     pageName: "VS Code Editing",
@@ -236,7 +222,7 @@ export const resources: Resource[] = [
     description:
       "Documentación oficial de Visual Studio Code enfocada en técnicas para editar código más rápido y eficiente.",
     tags: ["VS Code", "code editor", "productivity"],
-    category: "learning & reference",
+    category: categories.LEARNING_REFERENCE,
   },
   {
     pageName: "BulkResize",
@@ -244,7 +230,7 @@ export const resources: Resource[] = [
     description:
       "Herramienta web para optimizar múltiples imágenes, con opciones de formato y tamaño.",
     tags: ["image optimization", "compressor", "online tool"],
-    category: "developer tools",
+    category: categories.DEVELOPER_TOOLS,
   },
   {
     pageName: "Imgur",
@@ -252,7 +238,7 @@ export const resources: Resource[] = [
     description:
       "Plataforma para almacenar, compartir y enlazar imágenes de forma rápida.",
     tags: ["image hosting", "media storage", "online gallery"],
-    category: "developer tools",
+    category: categories.DEVELOPER_TOOLS,
   },
   {
     pageName: "VirusTotal",
@@ -260,7 +246,7 @@ export const resources: Resource[] = [
     description:
       "Herramienta online para analizar URLs y archivos en busca de malware usando múltiples proveedores de seguridad.",
     tags: ["malware scan", "security", "online tool"],
-    category: "developer tools",
+    category: categories.DEVELOPER_TOOLS,
   },
   {
     pageName: "PageSpeed",
@@ -268,7 +254,7 @@ export const resources: Resource[] = [
     description:
       "Herramienta online de Google para analizar y calificar el rendimiento y optimización de páginas web.",
     tags: ["web optimization", "performance", "SEO", "online tool"],
-    category: "developer tools",
+    category: categories.DEVELOPER_TOOLS,
   },
   {
     pageName: "XML Sitemap",
@@ -276,7 +262,7 @@ export const resources: Resource[] = [
     description:
       "Generador online de archivos sitemap XML para mejorar la indexación web.",
     tags: ["SEO", "online tool"],
-    category: "developer tools",
+    category: categories.DEVELOPER_TOOLS,
   },
   {
     pageName: "Bennettfeely",
@@ -284,7 +270,7 @@ export const resources: Resource[] = [
     description:
       "Generador visual online para crear formas CSS usando clip-path.",
     tags: ["CSS", "visual tool", "online tool", "design resources"],
-    category: "developer tools",
+    category: categories.DEVELOPER_TOOLS,
   },
   {
     pageName: "RandomUser",
@@ -292,7 +278,7 @@ export const resources: Resource[] = [
     description:
       "API gratuita para generar datos ficticios de usuarios para pruebas y prototipos.",
     tags: ["API", "mock data", "open source", "developer tool"],
-    category: "mock APIs & test data",
+    category: categories.MOCK_APIS_TEST_DATA,
   },
   {
     pageName: "StoreAPI",
@@ -300,7 +286,7 @@ export const resources: Resource[] = [
     description:
       "API gratuita que ofrece datos de comercio electrónico para prototipos y pruebas.",
     tags: ["API", "mock data", "open source", "developer tool"],
-    category: "mock APIs & test data",
+    category: categories.MOCK_APIS_TEST_DATA,
   },
   {
     pageName: "Jsoncrack",
@@ -309,7 +295,7 @@ export const resources: Resource[] = [
     description:
       "Extensión para VS Code que visualiza archivos JSON en forma gráfica y fácil de explorar.",
     tags: ["visual tool"],
-    category: "VS code extensions",
+    category: categories.VS_CODE_EXTENSIONS,
   },
   {
     pageName: "Auto Close Tag",
@@ -318,7 +304,7 @@ export const resources: Resource[] = [
     description:
       "Extensión para VS Code que cierra automáticamente etiquetas HTML y JSX cuando se abre una nueva.",
     tags: ["HTML", "productivity", "markup"],
-    category: "VS code extensions",
+    category: categories.VS_CODE_EXTENSIONS,
   },
   {
     pageName: "Auto Rename Tag",
@@ -327,7 +313,7 @@ export const resources: Resource[] = [
     description:
       "Extension que renombra automáticamente etiquetas HTML o JSX al editar.",
     tags: ["HTML", "productivity", "markup"],
-    category: "VS code extensions",
+    category: categories.VS_CODE_EXTENSIONS,
   },
   {
     pageName: "Better Comments",
@@ -335,7 +321,7 @@ export const resources: Resource[] = [
       "https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments",
     description: "Personaliza comentarios con colores según su tipo o prefijo.",
     tags: ["productivity", "comments"],
-    category: "VS code extensions",
+    category: categories.VS_CODE_EXTENSIONS,
   },
   {
     pageName: "CodeSnap",
@@ -344,7 +330,7 @@ export const resources: Resource[] = [
     description:
       "Captura y guarda screenshots estéticos de tu código desde VS Code.",
     tags: ["screenshots", "productivity", "visual tool"],
-    category: "VS code extensions",
+    category: categories.VS_CODE_EXTENSIONS,
   },
   {
     pageName: "Image Preview",
@@ -353,7 +339,7 @@ export const resources: Resource[] = [
     description:
       "Muestra una vista previa de imágenes en el gutter y al pasar el cursor en VS Code.",
     tags: ["images", "productivity"],
-    category: "VS code extensions",
+    category: categories.VS_CODE_EXTENSIONS,
   },
   {
     pageName: "Tailwind CSS IntelliSense",
@@ -361,7 +347,7 @@ export const resources: Resource[] = [
       "https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss",
     description: "IntelliSense para clases de Tailwind CSS en VS Code.",
     tags: ["tailwind ", "CSS", "productivity"],
-    category: "VS code extensions",
+    category: categories.VS_CODE_EXTENSIONS,
   },
   {
     pageLink:
@@ -370,7 +356,7 @@ export const resources: Resource[] = [
       "Permite navegar y editar selectores CSS directamente desde HTML.",
     tags: ["CSS", "navigation", "code editor"],
     pageName: "CSS Peek",
-    category: "VS code extensions",
+    category: categories.VS_CODE_EXTENSIONS,
   },
   {
     pageName: "Todo Tree",
@@ -379,7 +365,7 @@ export const resources: Resource[] = [
     description:
       "Extensión que busca y muestra en árbol los comentarios TODO y FIXME en tu proyecto.",
     tags: ["comments", "productivity"],
-    category: "VS code extensions",
+    category: categories.VS_CODE_EXTENSIONS,
   },
   {
     pageName: "Prettier",
@@ -395,7 +381,7 @@ export const resources: Resource[] = [
       "TypeScript",
       "CSS",
     ],
-    category: "VS code extensions",
+    category: categories.VS_CODE_EXTENSIONS,
   },
   {
     pageLink:
@@ -403,7 +389,7 @@ export const resources: Resource[] = [
     description: "Tema icónico de Atom para VS Code.",
     tags: ["theme", "dark mode"],
     pageName: "One Dark Pro",
-    category: "VS code extensions",
+    category: categories.VS_CODE_EXTENSIONS,
   },
   {
     pageLink:
@@ -412,7 +398,7 @@ export const resources: Resource[] = [
       "Tema oscuro para Visual Studio Code con esquema de colores Andromeda.",
     tags: ["theme", "dark mode"],
     pageName: "Andromeda Theme",
-    category: "VS code extensions",
+    category: categories.VS_CODE_EXTENSIONS,
   },
   {
     pageLink:
@@ -421,6 +407,6 @@ export const resources: Resource[] = [
       "Tema oscuro para Visual Studio Code basado en la paleta Dracula.",
     tags: ["theme", "dark mode", "UI"],
     pageName: "Dracula Theme",
-    category: "VS code extensions",
+    category: categories.VS_CODE_EXTENSIONS,
   },
 ];
