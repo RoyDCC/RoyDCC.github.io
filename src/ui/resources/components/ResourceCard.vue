@@ -23,7 +23,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Resource } from "../../../shared/constants/resources";
+import type { Resource } from "../../../shared/interfaces/resource.interface";
 import externalLink from "/icons/external-link.svg";
 const props = defineProps<{ resource: Resource }>();
 </script>
