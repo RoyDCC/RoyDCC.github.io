@@ -28,7 +28,10 @@
       <div
         class="resources-list container-xl flex flex-wrap gap-6 justify-around py-15 pt-10"
       >
-        <ResourceCard v-for="r in filteredResources" :resource="r" />
+        <ResourceCard
+          v-for="r in filteredResources"
+          :resource="limitedTags(r)"
+        />
       </div>
     </article>
   </section>
@@ -36,7 +39,7 @@
 
 <script setup lang="ts">
 import { computed, ref } from "vue";
-import { resources } from "../../../shared/constants/resources";
+import { resources, type Resource } from "../../../shared/constants/resources";
 import ResourceCard from "../components/ResourceCard.vue";
 import searchSVG from "/icons/search.svg";
 
@@ -50,6 +53,8 @@ const filteredResources = computed(() => {
       r.tags.some((tag) => tag.toLowerCase().includes(filterSearch.value))
   );
 });
+
+const limitedTags = (r: Resource): Resource => ({...r, tags: r.tags.slice(0, 3)});
 </script>
 
 <style scoped>
