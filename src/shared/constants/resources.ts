@@ -43,25 +43,37 @@ export const resources: Resource[] = [
   },
   {
     pageLink: "https://devicon.dev/",
-    description: "Biblioteca de íconos SVG de tecnologías, lenguajes y herramientas para proyectos de desarrollo.",
+    description:
+      "Biblioteca de íconos SVG de tecnologías, lenguajes y herramientas para proyectos de desarrollo.",
     tags: ["icons", "tech logos", "open source", "SVG icons"],
     pageName: "Devicons",
     category: categories.VISUAL_ASSETS,
   },
   {
     pageLink: "https://fontawesome.com/",
-    description: "Colección de íconos vectoriales personalizables para interfaces web y móviles.",
+    description:
+      "Colección de íconos vectoriales personalizables para interfaces web y móviles.",
     tags: ["icons", "UI elements", "SVG icons"],
     pageName: "FontAwesome",
     category: categories.VISUAL_ASSETS,
   },
   {
     pageLink: "https://tabler.io/icons",
-    description: "Set de íconos SVG open source para usar en aplicaciones y paneles de usuario.",
+    description:
+      "Set de íconos SVG open source para usar en aplicaciones y paneles de usuario.",
     tags: ["icons", "SVG icons", "UI components", "open source"],
     pageName: "Tabler Icons",
     category: categories.VISUAL_ASSETS,
   },
+  {
+    pageName: "Driver JS",
+    pageLink: "https://driverjs.com/docs/installation",
+    description:
+      "Librería JavaScript para guiar al usuario con tours interactivos, popovers y resaltado de elementos.",
+    tags: ["JavaScript", "UX", "NPM", "tutorials"],
+    category: categories.UI_UX_DESIGN_INSPIRATION,
+  },
+
   {
     pageName: "Uiverse",
     pageLink: "https://uiverse.io/",
@@ -216,6 +228,23 @@ export const resources: Resource[] = [
     category: categories.FRAMEWORKS_LIBRARIES,
   },
   {
+    pageName: "GSAP",
+    pageLink: "https://gsap.com/",
+    description:
+      "Plataforma de animación en JavaScript para crear transiciones y secuencias complejas en la web.",
+    tags: ["JavaScript", "animations", "CSS", "UI/UX", "open source", "JS"],
+    category: categories.FRAMEWORKS_LIBRARIES,
+  },
+  {
+    pageName: "Anime JS",
+    pageLink: "https://animejs.com/",
+    description:
+      "Librería ligera de JavaScript para animar propiedades CSS, SVG, DOM y objetos JavaScript.",
+    tags: ["JavaScript", "animations", "CSS", "SVG", "open source", "JS"],
+    category: categories.FRAMEWORKS_LIBRARIES,
+  },
+
+  {
     pageName: "OverAPI",
     pageLink: "https://overapi.com/",
     description:
@@ -238,6 +267,22 @@ export const resources: Resource[] = [
       "Documentación oficial de Visual Studio Code enfocada en técnicas para editar código más rápido y eficiente.",
     tags: ["VS Code", "code editor", "productivity"],
     category: categories.LEARNING_REFERENCE,
+  },
+  {
+    pageName: "DB Diagram",
+    pageLink: "https://dbdiagram.io/home",
+    description:
+      "Herramienta online para crear diagramas ER de bases de datos de forma visual.",
+    tags: ["database", "ER diagrams", "visual tool", "online tool"],
+    category: categories.DEVELOPER_TOOLS,
+  },
+  {
+    pageName: "CSS Grid Generator",
+    pageLink: "https://cssgridgenerator.io/",
+    description:
+      "Herremienta para generar layouts con CSS Grid y obtener el código listo para usar.",
+    tags: ["CSS", "grid", "layout", "visual tool", "online tool"],
+    category: categories.DEVELOPER_TOOLS,
   },
   {
     pageName: "BulkResize",
@@ -287,6 +332,15 @@ export const resources: Resource[] = [
     tags: ["CSS", "visual tool", "online tool", "design resources"],
     category: categories.DEVELOPER_TOOLS,
   },
+  {
+    pageName: "Public APIs",
+    pageLink: "https://publicapis.dev/",
+    description:
+      "Directorio online con una colección de APIs públicas organizadas por categorías y temas.",
+    tags: ["API", "developer tool", "open source"],
+    category: categories.MOCK_APIS_TEST_DATA,
+  },
+
   {
     pageName: "RandomUser",
     pageLink: "https://randomuser.me/",
