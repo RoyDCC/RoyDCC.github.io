@@ -1,6 +1,5 @@
 import { categories, type Resource } from "../interfaces/resource.interface";
 
-
 export const resources: Resource[] = [
   {
     pageName: "Freepik",
@@ -44,21 +43,21 @@ export const resources: Resource[] = [
   },
   {
     pageLink: "https://devicon.dev/",
-    description: "Descripcion generica del recurso como placeholder",
+    description: "Biblioteca de íconos SVG de tecnologías, lenguajes y herramientas para proyectos de desarrollo.",
     tags: ["icons", "tech logos", "open source", "SVG icons"],
     pageName: "Devicons",
     category: categories.VISUAL_ASSETS,
   },
   {
     pageLink: "https://fontawesome.com/",
-    description: "Descripcion generica del recurso como placeholder",
+    description: "Colección de íconos vectoriales personalizables para interfaces web y móviles.",
     tags: ["icons", "UI elements", "SVG icons"],
     pageName: "FontAwesome",
     category: categories.VISUAL_ASSETS,
   },
   {
     pageLink: "https://tabler.io/icons",
-    description: "Descripcion generica del recurso como placeholder",
+    description: "Set de íconos SVG open source para usar en aplicaciones y paneles de usuario.",
     tags: ["icons", "SVG icons", "UI components", "open source"],
     pageName: "Tabler Icons",
     category: categories.VISUAL_ASSETS,
@@ -71,13 +70,20 @@ export const resources: Resource[] = [
     tags: ["UI elements", "CSS", "open source"],
     category: categories.UI_UX_DESIGN_INSPIRATION,
   },
-
   {
     pageName: "Uiball",
     pageLink: "https://uiball.com/",
     description:
       "Loaders y spinners open source en HTML, CSS, SVG, y componentes web.",
     tags: ["loaders", "UI Elements", "NPM", "open source"],
+    category: categories.UI_UX_DESIGN_INSPIRATION,
+  },
+  {
+    pageName: "CSS Loaders",
+    pageLink: "https://css-loaders.com/",
+    description:
+      "Colección de loaders y spinners animados hechos con CSS, listos para copiar y usar.",
+    tags: ["CSS", "loaders", "UI elements", "open source"],
     category: categories.UI_UX_DESIGN_INSPIRATION,
   },
   {
@@ -182,7 +188,23 @@ export const resources: Resource[] = [
     pageLink: "https://getbootstrap.com/docs/5.3/components/navbar/",
     description:
       "Framework CSS open source para crear interfaces web responsivas y móviles con componentes listos para usar.",
-    tags: ["CSS", "UI components", "open source"],
+    tags: ["CSS", "UI components", "open source", "framework"],
+    category: categories.FRAMEWORKS_LIBRARIES,
+  },
+  {
+    pageName: "Tailwind CSS",
+    pageLink: "https://tailwindcss.com/",
+    description:
+      "Framework CSS utilitario para crear interfaces mediante clases predefinidas.",
+    tags: ["CSS", "UI components", "open source", "framework"],
+    category: categories.FRAMEWORKS_LIBRARIES,
+  },
+  {
+    pageName: "DaisyUI",
+    pageLink: "https://daisyui.com/docs/install/",
+    description:
+      "Plugin de Tailwind CSS que añade componentes y temas listos para usar en interfaces web.",
+    tags: ["tailwind", "CSS", "UI components", "themes", "open source"],
     category: categories.FRAMEWORKS_LIBRARIES,
   },
   {
@@ -207,13 +229,6 @@ export const resources: Resource[] = [
     description:
       "Documentación completa y actualizada de JavaScript, desde lo básico hasta temas avanzados.",
     tags: ["JavaScript", "JS tutorial", "programming"],
-    category: categories.LEARNING_REFERENCE,
-  },
-  {
-    pageName: "Shortcut Code",
-    pageLink: "https://shortcode.dev/",
-    description: "Descripcion generica del recurso como placeholder",
-    tags: ["code snippets", "example code"],
     category: categories.LEARNING_REFERENCE,
   },
   {

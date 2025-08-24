@@ -20,12 +20,6 @@
 
   --custom-hero-gradient-bg: linear-gradient(135deg, #13141a, #25262e);
   --custom-cian-gradient-bg: linear-gradient(135deg, #00ffff, #4dffff);
-  /* Colores Principales
-  #1a1c24 (--card: 230 15% 12%) Fondo de tarjetas y elementos contenedores como las cards de contacto y proyectos.
-  #4dffff (--primary-glow: 185 100% 70%) Variante brillante del cian, usado en efectos hover y estados activos.
-  #25262e (--secondary: 230 15% 18%) Color secundario, usado en botones secundarios y elementos menos prominentes.
-  #cc00ff (--accent: 280 100% 60%) Púrpura de acento, definido pero usado mínimamente en el diseño actual.
-  */
 }
 html {
   scroll-behavior: smooth;
@@ -104,4 +98,19 @@ html {
 .container-xl {
   max-width: 1250px;
   margin-inline: auto;
+}
+.filter-chip{
+  transition: 250ms;
+}
+.filter-chip:hover{
+  transform: scale(1.04);
+  color: var(--custom-text-primary);
+}
+.filter-chip-active{
+  background-color: var(--custom-text-cian);
+  color: var(--custom-text-dark);
+}
+.filter-chip-active:hover{
+  transform: scale(1.04);
+  color: var(--custom-text-dark);
 }

@@ -25,8 +25,11 @@
         />
       </div>
 
-      <div class="filters-container">
-        
+      <div class="filters-container container-xl mt-8">
+        <CategoryFilters
+          :filters="filterList"
+          @filter-selected="selectedCategory = $event"
+        />
       </div>
 
       <div
@@ -45,21 +48,35 @@
 import { computed, ref } from "vue";
 import { resources } from "../../../shared/constants/resources";
 import ResourceCard from "../components/ResourceCard.vue";
+import CategoryFilters from "../components/CategoryFilters.vue";
 import searchSVG from "/icons/search.svg";
 import type { Resource } from "../../../shared/interfaces/resource.interface";
+import { categories } from "../../../shared/interfaces/resource.interface";
 
+// Filters
+const selectedCategory = ref("");
+
+// Searchbar
+const filterList = Object.values(categories);
 const filterSearch = ref("");
 
 const filteredResources = computed(() => {
+  const searchTerm = filterSearch.value.toLowerCase();
+
   return resources.filter(
     (r) =>
-      r.pageName.toLowerCase().includes(filterSearch.value.toLowerCase()) ||
-      r.category.toLowerCase().includes(filterSearch.value.toLowerCase()) ||
-      r.tags.some((tag) => tag.toLowerCase().includes(filterSearch.value))
+      (selectedCategory.value == "" || r.category.toLowerCase() == selectedCategory.value.toLowerCase()) &&
+      (r.pageName.toLowerCase().includes(searchTerm) ||
+        r.category.toLowerCase().includes(searchTerm) ||
+        r.tags.some((tag) => tag.toLowerCase().includes(searchTerm)))
   );
 });
 
-const limitedTags = (r: Resource): Resource => ({...r, tags: r.tags.slice(0, 3)});
+// Tags
+const limitedTags = (r: Resource): Resource => ({
+  ...r,
+  tags: r.tags.slice(0, 3),
+});
 </script>
 
 <style scoped>
