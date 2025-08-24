@@ -1,7 +1,7 @@
 <template>
   <div class="flex gap-2 flex-wrap justify-center">
     <button
-      v-for="filter in filters"
+      v-for="filter in props.filters"
       @click="selectFilter(filter)"
       :key="filter"
       class="filter-chip glass-border-full rounded-4xl px-4 py-0.5 text-desc cursor-pointer capitalize"
