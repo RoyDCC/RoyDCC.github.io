@@ -73,7 +73,6 @@ export const resources: Resource[] = [
     tags: ["JavaScript", "UX", "NPM", "tutorials"],
     category: categories.UI_UX_DESIGN_INSPIRATION,
   },
-
   {
     pageName: "Uiverse",
     pageLink: "https://uiverse.io/",
@@ -243,7 +242,13 @@ export const resources: Resource[] = [
     tags: ["JavaScript", "animations", "CSS", "SVG", "open source", "JS"],
     category: categories.FRAMEWORKS_LIBRARIES,
   },
-
+  {
+    pageName: "Tempo",
+    pageLink: "https://tempo.formkit.com/",
+    description: "Librería ligera para manipulación y formateo de fechas en JavaScript.",
+    tags: ["JavaScript", "dates", "NPM", "JS", "open source"],
+    category: categories.FRAMEWORKS_LIBRARIES,
+  },
   {
     pageName: "OverAPI",
     pageLink: "https://overapi.com/",
