@@ -345,7 +345,30 @@ export const resources: Resource[] = [
     tags: ["API", "developer tool", "open source"],
     category: categories.MOCK_APIS_TEST_DATA,
   },
-
+  {
+    pageName: "Altair",
+    pageLink: "https://altairgraphql.dev/",
+    description:
+      "Cliente gráfico ligero para probar y depurar APIs GraphQL en entornos de desarrollo.",
+    tags: ["GraphQL", "API client", "developer tool", "open source"],
+    category: categories.DEVELOPER_TOOLS,
+  },
+  {
+    pageName: "Bruno",
+    pageLink: "https://www.usebruno.com/",
+    description:
+      "Cliente alternativo a Postman, enfocado en pruebas de APIs REST con bajo consumo de recursos.",
+    tags: ["REST", "API client", "developer tool"],
+    category: categories.DEVELOPER_TOOLS,
+  },
+  {
+    pageName: "TablePlus",
+    pageLink: "https://tableplus.com/",
+    description:
+      "Aplicación ligera de escritorio para gestionar y visualizar bases de datos.",
+    tags: ["database", "SQL", "database client", "developer tool", "DB"],
+    category: categories.DEVELOPER_TOOLS,
+  },
   {
     pageName: "RandomUser",
     pageLink: "https://randomuser.me/",
