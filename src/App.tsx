@@ -1,10 +1,12 @@
+import HomePage from "../ui/home/pages/HomePage/HomePage"
+
 function App() {
 
   return (
     <>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque tempora doloremque sunt consequuntur fugit.
-      </p>
+      <p>App Component</p>
+      
+      <HomePage />
     </>
   )
 }
