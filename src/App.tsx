@@ -1,12 +1,11 @@
-import HomePage from "../ui/home/pages/HomePage/HomePage"
+import { RouterProvider } from "react-router/dom"
+import { router } from "./router/app.router"
 
 function App() {
 
   return (
     <>
-      <p>App Component</p>
-      
-      <HomePage />
+      <RouterProvider router={router} />
     </>
   )
 }
