@@ -1,4 +1,4 @@
-import { HeroContainer } from "@/ui/resources/components/HeroContainer";
+import { HeroContainer } from "@/ui/home/components/HeroContainer";
 import type { FC } from "react";
 import { Link } from "react-router";
 
@@ -11,15 +11,11 @@ export const HomePage: FC = () => {
         <p className="py-6 text-xl text-desc font-medium">Desarrollador Full Stack con experiencia creando soluciones completas y productos de calidad</p>
 
         <div className="hero-btn-container flex justify-center gap-7 flex-wrap">
-          <Link to="/">
-            <button className="px-7 py-3 cursor-pointer border-0 bg-cian-gradient text-black rounded-lg font-medium transition duration-250 hover:scale-105">
-              Ver Proyectos
-            </button>
+          <Link to="/" className="px-7 py-3 cursor-pointer border-0 bg-cian-gradient text-black rounded-lg font-medium transition duration-250 hover:scale-105">
+            Ver Proyectos
           </Link>
-          <Link to="/">
-            <button className="px-7 py-3 cursor-pointer border-0 bg-default rounded-lg font-medium transition duration-250 hover:scale-105">
-              Contacto
-            </button>
+          <Link to="/" className="px-7 py-3 cursor-pointer border-0 bg-default rounded-lg font-medium transition duration-250 hover:scale-105">
+            Contacto
           </Link>
         </div>
       </HeroContainer>
