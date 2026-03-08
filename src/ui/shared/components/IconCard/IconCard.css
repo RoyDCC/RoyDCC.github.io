@@ -1,0 +1,9 @@
+.icon-card:hover {
+  border: 0.1px solid var(--custom-glass-border-hover);
+}
+.icon-card:hover figcaption {
+  color: var(--custom-text-primary);
+}
+.icon-card:hover img {
+  transform: scale(1.1);
+}
