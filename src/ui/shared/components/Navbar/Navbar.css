@@ -1,0 +1,11 @@
+.menu a,
+.menu summary {
+  transition: 300ms;
+}
+.menu a:hover,
+.menu summary:hover {
+  background-color: var(--custom-light-bg);
+}
+.navbar {
+  padding: 5px 2rem;
+}

@@ -3,6 +3,7 @@ import { Link } from "react-router";
 import { technologies } from "@/domain/shared/constants/technology-stack";
 import { HeroContainer } from "@/ui/home/components/HeroContainer";
 import { TechStack } from "../../components/TechStack";
+import { ContactCTA } from "@/ui/shared/components/ContactCTA";
 
 export const HomePage: FC = () => {
   return (
@@ -32,6 +33,10 @@ export const HomePage: FC = () => {
 
       <div className="techstack-container mt-8 py-10 px-4">
         <TechStack technologyList={technologies} />
+      </div>
+
+      <div className="cta-container mb-15 py-12 px-4 drop-light">
+        <ContactCTA />
       </div>
     </>
   );
