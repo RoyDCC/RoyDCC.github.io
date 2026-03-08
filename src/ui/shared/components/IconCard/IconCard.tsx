@@ -1,4 +1,5 @@
 import type { FC } from "react";
+import "./IconCard.css";
 
 interface CardProps {
   title: string;

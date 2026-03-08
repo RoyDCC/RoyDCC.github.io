@@ -71,7 +71,7 @@ html {
   color: var(--custom-text-cian);
 }
 .drop-light {
-  filter: drop-shadow(1px 1px 4px #28b4b424);
+  filter: drop-shadow(1px 1px 3px #fff2);
 }
 .text-black {
   color: var(--custom-text-dark);

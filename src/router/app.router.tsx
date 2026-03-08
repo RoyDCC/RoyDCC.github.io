@@ -3,6 +3,7 @@ import { HomePage } from "@/ui/home/pages/HomePage";
 import { ContactPage } from "@/ui/contact/pages/ContactPage";
 import { ResourcesPage } from "@/ui/resources/pages/ResourcesPage";
 import { Navbar } from "@/ui/shared/components/Navbar";
+import { Footer } from "@/ui/shared/components/Footer";
 
 export const router = createBrowserRouter([
   {
@@ -11,6 +12,7 @@ export const router = createBrowserRouter([
       <>
         <Navbar />
         <Outlet />
+        <Footer />
       </>
     ),
     children: [
