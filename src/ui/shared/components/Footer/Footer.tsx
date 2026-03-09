@@ -2,6 +2,7 @@ import type { FC } from "react";
 
 export const Footer: FC = () => {
   const year = new Date().getFullYear();
+
   return (
     <>
       <footer className="glass-border-t text-desc bg-default">
@@ -10,7 +11,7 @@ export const Footer: FC = () => {
         <a href="https://github.com/RoyDCC" target="_blank" className="inline-block w-10 h-10">
           <img src="/icons/github.svg" alt="Github Link" className="opacity-55 invert brightness-0"/>
         </a>
-        <a href="#" className="inline-block w-10 h-10">
+        <a href="https://www.linkedin.com/in/rodrigo-díaz-de-león-castañeda-a01614361" target="_blank" className="inline-block w-10 h-10">
           <img src="/icons/linkedin.svg" alt="Linkedin Link" className="opacity-55 invert brightness-0"/>
         </a>
       </div>
