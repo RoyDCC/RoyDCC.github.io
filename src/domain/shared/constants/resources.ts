@@ -243,6 +243,14 @@ export const resources: Resource[] = [
     category: categories.FRAMEWORKS_LIBRARIES,
   },
   {
+    pageName: "Auto Animate",
+    pageLink: "https://auto-animate.formkit.com/",
+    description:
+      "Librería de animación automática para transiciones suaves entre estados en la web, sin necesidad de definir keyframes.",
+    tags: ["JavaScript", "animations", "CSS", "open source", "JS"],
+    category: categories.FRAMEWORKS_LIBRARIES,
+  },
+  {
     pageName: "Tempo",
     pageLink: "https://tempo.formkit.com/",
     description: "Librería ligera para manipulación y formateo de fechas en JavaScript.",
