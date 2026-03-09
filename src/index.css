@@ -128,3 +128,6 @@ html {
   transform: scale(1.04);
   color: var(--custom-text-dark);
 }
+input:focus {
+  outline: 0.1px solid var(--custom-text-cian);
+}
