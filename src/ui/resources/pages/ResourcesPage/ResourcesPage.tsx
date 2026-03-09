@@ -1,4 +1,4 @@
-import type { FC } from "react";
+import { useState, useCallback, type FC } from "react";
 import { ResourceCard } from "../../components/ResourceCard/ResourceCard";
 import { resources } from "@/domain/shared/constants/resources";
 import { CategoryFilters } from "../../components/CategoryFilters";
@@ -7,9 +7,16 @@ import searchSVG from "/icons/search.svg";
 
 export const ResourcesPage: FC = () => {
   const filterList = Object.values(categories);
-  const hanldleFilterChange = (value: string) => {
-    console.log(value);
-  };
+  const [filteredResources, setFilteredResources] = useState(resources)
+
+  const hanldleFilterChange = useCallback((value: string) => {
+    if (!value) {
+      setFilteredResources(resources);
+      return;
+    }
+
+    setFilteredResources(resources.filter((rec) => rec.category === value));
+  }, []);
 
   return (
     <section className="px-4 py-10 mt-15">
@@ -39,7 +46,7 @@ export const ResourcesPage: FC = () => {
         </div>
 
         <div className="resources-list container-xl flex flex-wrap gap-6 justify-around py-15 pt-10">
-          {resources.map(resource=>(
+          {filteredResources.map(resource=>(
             <ResourceCard resource={resource} key={resource.pageName+resource.category} />
           ))}
         </div>

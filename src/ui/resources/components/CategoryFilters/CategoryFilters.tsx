@@ -1,4 +1,4 @@
-import { useState, useEffect, type FC } from "react";
+import { useState, type FC } from "react";
 
 interface CategoryFiltersProps {
   filters: string[];
@@ -9,12 +9,10 @@ export const CategoryFilters: FC<CategoryFiltersProps> = ({ filters, onFilterSel
   const [selectedFilter, setSelectedFilter] = useState("");
 
   const selectFilter = (filter: string) => {
-    setSelectedFilter((prev) => (prev === filter ? "" : filter));
+    const newSelected = selectedFilter === filter ? "" : filter;
+    setSelectedFilter(newSelected);
+    onFilterSelected(newSelected);
   };
-
-  useEffect(() => {
-    onFilterSelected(selectedFilter);
-  }, [selectedFilter, onFilterSelected]);
 
   return (
     <div className="flex gap-2 flex-wrap justify-center">

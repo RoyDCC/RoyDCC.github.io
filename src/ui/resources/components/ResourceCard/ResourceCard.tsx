@@ -21,7 +21,7 @@ export const ResourceCard: FC<ResourceCardProps> = ({ resource }: ResourceCardPr
       <h1 className="text-white text-xl font-semibold">{resource.pageName}</h1>
       <p className="text-desc">{resource.description}</p>
       <ul className="flex flex-wrap text-sm gap-2">
-        {resource.tags.map((tag) => (
+        {resource.tags.slice(0, 3).map((tag) => (
           <li
             className="bg-purple text-purple border-purple font-light rounded-full p-1 px-3 capitalize"
             key={tag + resource.pageName}
