@@ -386,7 +386,7 @@ export const resources: Resource[] = [
     category: categories.MOCK_APIS_TEST_DATA,
   },
   {
-    pageName: "MTDB",
+    pageName: "TMDB API",
     pageLink: "https://developer.themoviedb.org/docs/getting-started",
     description:
       "API gratuita que ofrece datos de películas, series y actores para prototipos y pruebas.",
