@@ -20,7 +20,7 @@ export const ContactCard: FC<ContactCardProps> = (props: ContactCardProps) => {
       <img src={icon} alt="Icon" className="contact-card-img mx-auto w-17 h-17 opacity-85 transition duration-300" />
       <h1 className="text-white text-xl font-bold">{title}</h1>
       <p className="text-desc">{description}</p>
-      <a href={link} className="text-cian opacity-85">
+      <a href={link} className="text-cian opacity-85" target="_blank">
         Contactar
       </a>
     </article>
