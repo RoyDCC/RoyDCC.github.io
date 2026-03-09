@@ -1,0 +1,11 @@
+.external-link {
+  top: 17px;
+  right: 17px;
+  transition: 150ms;
+  filter: brightness(65%);
+}
+.external-link:hover {
+  top: 14px;
+  right: 14px;
+  filter: brightness(85%);
+}

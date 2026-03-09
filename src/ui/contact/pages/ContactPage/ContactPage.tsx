@@ -15,7 +15,7 @@ export const ContactPage: FC = () => {
       </div>
       <div className="contact-cards-container flex flex-row flex-wrap justify-center gap-5 py-12">
         {contactOptions.map((opt) => (
-          <ContactCard title={opt.title} description={opt.description} link={opt.link} icon={opt.icon} />
+          <ContactCard title={opt.title} description={opt.description} link={opt.link} icon={opt.icon} key={opt.title+opt.icon}/>
         ))}
       </div>
     </section>
