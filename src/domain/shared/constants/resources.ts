@@ -386,6 +386,14 @@ export const resources: Resource[] = [
     category: categories.MOCK_APIS_TEST_DATA,
   },
   {
+    pageName: "MTDB",
+    pageLink: "https://developer.themoviedb.org/docs/getting-started",
+    description:
+      "API gratuita que ofrece datos de películas, series y actores para prototipos y pruebas.",
+    tags: ["API", "mock data", "open source", "developer tool"],
+    category: categories.MOCK_APIS_TEST_DATA,
+  },
+  {
     pageName: "Jsoncrack",
     pageLink:
       "https://marketplace.visualstudio.com/items?itemName=AykutSarac.jsoncrack-vscode",
