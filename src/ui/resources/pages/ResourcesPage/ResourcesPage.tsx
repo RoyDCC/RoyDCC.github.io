@@ -35,7 +35,7 @@ export const ResourcesPage: FC = () => {
   return (
     <section className="px-4 py-10 mt-15">
       <div className="resources-desc-container">
-        <h1 className="text-5xl font-bold text-center">Recursos para Desarrolladores</h1>
+        <h1 className="text-4xl font-bold text-center">Recursos para Desarrolladores</h1>
         <p className="text-xl text-desc mt-4 text-center">
           Una colección de herramientas, bibliotecas y recursos útiles para desarrolladores
         </p>

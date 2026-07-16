@@ -6,7 +6,7 @@ export const ContactPage: FC = () => {
   return (
     <section className="text-center container-lg px-4 py-10 mt-15">
       <div className="contact-text-container">
-        <h1 className="text-5xl text-white font-bold">Contacto</h1>
+        <h1 className="text-4xl text-white font-bold">Contacto</h1>
         <p className="text-desc text-xl mt-3">
           ¿Tienes algún proyecto en mente o quieres colaborar?
           <br />

@@ -8,11 +8,12 @@ export const Navbar: FC = () => {
       <section className="bg-glass bg-base-100 shadow-sm glass-border-b w-full fixed top-0 z-10">
         <div className="navbar text-desc max-w-7xl m-auto">
           <div className="navbar-start grow py-0">
+            {/* Movil */}
             <div className="dropdown">
-              <div role="button" className="btn btn-ghost lg:hidden">
+              <div role="button" tabIndex={0} className="btn btn-ghost lg:hidden">
                 <img src="/icons/menu-icon.svg" alt="Menu" className="invert w-7 h-7" />
               </div>
-              <ul className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow bg-default rounded-lg">
+              <ul tabIndex={0} className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow bg-default rounded-lg">
                 <li>
                   <NavLink to="/" className={({ isActive }) => (isActive ? "bg-active-blue " : "") + "rounded-xl text-base"}>
                     Inicio
@@ -42,6 +43,8 @@ export const Navbar: FC = () => {
                 RDC
             </NavLink>
           </div>
+          
+          {/* Desktop */}
           <div className="navbar-center hidden lg:flex pt-0">
             <ul className="menu menu-horizontal px-1 gap-5">
               <li>
