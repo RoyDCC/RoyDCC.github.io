@@ -1,0 +1,8 @@
+.hero-btn-container{
+    width: min(100%, 400px);
+}
+.hero-link{
+    cursor: pointer;
+    width: 45%;
+    width: clamp(170px, 45%, 200px);
+}
